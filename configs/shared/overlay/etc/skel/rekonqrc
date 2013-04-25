@@ -1,0 +1,15 @@
+[General]
+homePage=http://www.chakra-project.org/welcome.html
+startupBehaviour=0
+
+[MainWindow][Toolbar MainToolBar]
+ToolButtonStyle=IconOnly
+
+[NewTabPage]
+previewNames=KdeOs,Forums,YouTube-html5
+previewUrls=http://www.kde-os.tk,http://www.kde-os.tk/bbs,http://www.youtube.com/html5
+
+[Webkit]
+pluginsEnabled=1
+spatialNavigation=true
+webGL=true
