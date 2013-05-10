@@ -2,7 +2,7 @@
 update_info=kwin.upd:kde3.2Xinerama,kded.upd:kde3.0
 
 [ColorEffects:Disabled]
-Color=56,56,56
+Color=112,111,110
 ColorAmount=0
 ColorEffect=0
 ContrastAmount=0.65
@@ -11,7 +11,6 @@ IntensityAmount=0.1
 IntensityEffect=2
 
 [ColorEffects:Inactive]
-ChangeSelectionColor=true
 Color=112,111,110
 ColorAmount=0.025
 ColorEffect=2
@@ -23,76 +22,76 @@ IntensityEffect=0
 
 [Colors:Button]
 BackgroundAlternate=224,223,222
-BackgroundNormal=201,203,205
-DecorationFocus=126,165,190
-DecorationHover=84,136,171
-ForegroundActive=239,154,242
-ForegroundInactive=137,136,135
+BackgroundNormal=227,226,226
+DecorationFocus=195,195,195
+DecorationHover=195,195,195
+ForegroundActive=255,128,224
+ForegroundInactive=136,135,134
 ForegroundLink=0,87,174
 ForegroundNegative=191,3,3
-ForegroundNeutral=235,129,53
-ForegroundNormal=27,25,24
+ForegroundNeutral=176,128,0
+ForegroundNormal=20,19,18
 ForegroundPositive=0,110,40
 ForegroundVisited=100,74,155
 
 [Colors:Selection]
 BackgroundAlternate=62,138,204
-BackgroundNormal=28,120,190
-DecorationFocus=126,165,190
-DecorationHover=84,136,171
-ForegroundActive=239,154,242
+BackgroundNormal=195,195,195
+DecorationFocus=195,195,195
+DecorationHover=195,195,195
+ForegroundActive=255,128,224
 ForegroundInactive=165,193,228
 ForegroundLink=0,49,110
 ForegroundNegative=156,14,14
 ForegroundNeutral=255,221,0
-ForegroundNormal=251,251,251
+ForegroundNormal=0,0,0
 ForegroundPositive=128,255,128
 ForegroundVisited=69,40,134
 
 [Colors:Tooltip]
 BackgroundAlternate=196,224,255
-BackgroundNormal=29,29,29
-DecorationFocus=126,165,190
-DecorationHover=84,136,171
-ForegroundActive=239,154,242
-ForegroundInactive=48,48,48
+BackgroundNormal=222,222,222
+DecorationFocus=195,195,195
+DecorationHover=195,195,195
+ForegroundActive=255,128,224
+ForegroundInactive=96,112,128
 ForegroundLink=0,87,174
 ForegroundNegative=191,3,3
-ForegroundNeutral=235,129,53
-ForegroundNormal=251,251,251
-ForegroundPositive=32,110,64
+ForegroundNeutral=176,128,0
+ForegroundNormal=20,19,18
+ForegroundPositive=0,110,40
 ForegroundVisited=100,74,155
 
 [Colors:View]
 BackgroundAlternate=248,247,246
-BackgroundNormal=247,247,247
-DecorationFocus=126,165,190
-DecorationHover=84,136,171
-ForegroundActive=239,154,242
-ForegroundInactive=137,136,135
+BackgroundNormal=239,239,239
+DecorationFocus=195,195,195
+DecorationHover=195,195,195
+ForegroundActive=255,128,224
+ForegroundInactive=136,135,134
 ForegroundLink=0,87,174
 ForegroundNegative=191,3,3
-ForegroundNeutral=235,129,53
-ForegroundNormal=29,29,29
+ForegroundNeutral=176,128,0
+ForegroundNormal=20,19,18
 ForegroundPositive=0,110,40
 ForegroundVisited=100,74,155
 
 [Colors:Window]
 BackgroundAlternate=218,217,216
-BackgroundNormal=201,201,202
-DecorationFocus=126,165,190
-DecorationHover=84,136,171
-ForegroundActive=239,154,242
-ForegroundInactive=137,136,135
+BackgroundNormal=233,232,232
+DecorationFocus=195,195,195
+DecorationHover=195,195,195
+ForegroundActive=255,128,224
+ForegroundInactive=136,135,134
 ForegroundLink=0,87,174
 ForegroundNegative=191,3,3
-ForegroundNeutral=235,129,53
-ForegroundNormal=27,25,24
+ForegroundNeutral=176,128,0
+ForegroundNormal=20,19,18
 ForegroundPositive=0,110,40
 ForegroundVisited=100,74,155
 
 [General]
-ColorScheme=Caledonia 6
+Name=Oxygen Platinum
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
@@ -109,10 +108,7 @@ toolBarFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
 contrast=7
 
 [WM]
-activeBackground=36,36,36
-activeBlend=251,251,251
-activeFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
-activeForeground=251,251,251
-inactiveBackground=224,223,222
-inactiveBlend=48,48,48
-inactiveForeground=48,48,48
+activeBackground=195,195,195
+activeForeground=255,255,255
+inactiveBackground=224,223,223
+inactiveForeground=20,19,18
