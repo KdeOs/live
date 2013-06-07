@@ -1,5 +1,5 @@
-# Chakra-Live Packages file
-# Version: 20130214
+# Live Packages file
+# Version: 20130607
 
 ### These should probably be present
 base
@@ -15,7 +15,7 @@ binutils
 bzip2
 coreutils
 cryptsetup
-dcron
+cronie
 dhcpcd
 diffutils
 e2fsprogs
@@ -23,7 +23,6 @@ file
 findutils
 gawk
 gcc-libs
-gen-init-cpio
 gettext 
 glibc  
 grep 
@@ -51,8 +50,7 @@ rp-pppoe
 sed  
 shadow 
 sysfsutils   
-tar  
-tcp_wrappers  
+tar   
 texinfo
 usbutils
 vi
@@ -66,8 +64,8 @@ cdrkit
 sshfs
 linux-headers
 squashfs-tools
-aufs3-util
-cdemu-client
+##aufs3-util
+##cdemu-client
 lsb-release
 
 # basic needs
@@ -76,9 +74,9 @@ nbd
 hardware-detection
 hwd
 syslinux
-grub2-common
-grub2-bios
-grub2-efi64
+grub-common
+grub-bios
+grub-efi-x86_64
 os-prober
 hwdetect
 dmidecode
@@ -102,9 +100,7 @@ alsa-utils
 lm_sensors
 fuse
 cpupower
-pmtools
 iasl
-ccr ##base-devel shouldn't be on a basic system?
 
 # catalyst fixes
 xinetd
@@ -114,7 +110,7 @@ libstdc++5
 # generally useful tools that dont require X
 bash-completion
 openssh
-nmap
+##nmap
 dosfstools
 lsof
 vi
@@ -129,19 +125,18 @@ unzip
 unrar
 p7zip
 zip
-unarj
+##unarj
 
 # wireless drivers and tools
 #madwifi
 #ndiswrapper
 #ndiswrapper-utils
-#tiacx
 wireless_tools
 wireless-regdb
 iputils
 dnsutils
 crda
-usb-modeswitch
+usb_modeswitch
 vpnc
 openvpn
 openconnect
@@ -160,9 +155,7 @@ ipw2200-fw
 isl3887usb-firmware
 isl3890-firmware
 linux-firmware
-#tiacx-firmware
 zd1211-firmware
-#carl9170-fw  ##part of linux-firmware
 amd-ucode
 intel-ucode
 
@@ -211,7 +204,7 @@ xf86-video-nouveau
 #xf86-video-tseng
 #xf86-video-v4l
 xf86-video-vesa
-xf86-video-vmware
+##xf86-video-vmware
 #xf86-video-voodoo
 
 # xorg input drivers
@@ -265,18 +258,18 @@ kde-workspace
 oxygen-icons
 
 # themes (including kapudan options)
-kde-kdm-themes-grey
-kde-ksplash-themes-dharma
-kde-plasma-themes-caledonia
-chakra-wallpapers-grey
-kapudan-kde-themes-caledonia
-kde-plasma-themes-helium
+##kde-kdm-themes-grey
+kde-ksplash-themes-grey
+##kde-plasma-themes-caledonia
+##wallpapers-grey
+##kapudan-kde-themes-caledonia
+##kde-plasma-themes-helium
 kde-wallpapers
-grub2-themes-grey
+grub-themes-monochrome
 python2-xlib
-python2-v4l2capture
+##python2-v4l2capture
 python2-imaging
-caledonia-colors
+platinum-colors
 
 # kde (everything else)
 kdeadmin-kuser
@@ -291,7 +284,7 @@ kdegraphics-okular
 kdeutils-ark
 kdeutils-kgpg
 kdeutils-sweeper
-kdeplasma-applets-welcome-plasmoid
+##kdeplasma-applets-welcome-plasmoid
 kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
 ##kdenetwork-kget
@@ -321,9 +314,9 @@ kcm-ufw
 # tribe + dependencies
 kdebindings-smokekde
 kdebindings-pykde4
-netcfg   
+netctl   
 hwinfo
-tribe                                                                                                                                                              
+##tribe                                                                                                                                                              
 
 # extragear
 quassel
@@ -347,8 +340,8 @@ imagewriter
 tomoyo-tools
 python2-gobject3
 spun-live
-clamav
-chakra-init-live
+##clamav
+init-live
 #kdeplasma-addons-applets-lancelot
 #kdeplasma-addons-applets-takeoff
 #kdeplasma-applets-homerun 

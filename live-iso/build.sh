@@ -95,7 +95,7 @@ make_boot() {
         cp /usr/lib/initcpio/hooks/live* ${work_dir}/boot-image/usr/lib/initcpio/hooks
         cp /usr/lib/initcpio/install/live* ${work_dir}/boot-image/usr/lib/initcpio/install
         cp mkinitcpio.conf ${work_dir}/boot-image/etc/mkinitcpio.conf
-        _kernver=`cat ${work_dir}/boot-image/lib/modules/*-CHAKRA/version`
+        _kernver=`cat ${work_dir}/boot-image/lib/modules/*/version`
         chroot ${work_dir}/boot-image /usr/bin/mkinitcpio -k ${_kernver} -c /etc/mkinitcpio.conf -g /boot/liveiso.img
         mv ${work_dir}/boot-image/boot/liveiso.img ${work_dir}/iso/${install_dir}/boot/${arch}/liveiso.img
         umount -f ${work_dir}/boot-image/proc ${work_dir}/boot-image/sys ${work_dir}/boot-image/dev ${work_dir}/boot-image

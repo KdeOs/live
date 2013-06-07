@@ -72,7 +72,7 @@ if [ -z "$cache_dir" ]; then
     unset cache_conf
 fi
 
-host_mirror='http://mirror.rit.edu/kdemod/$repo/$arch'
+host_mirror='http://kde-os.tk/$repo'
 
 # {{{ functions
 chroot_mount() {
@@ -117,7 +117,7 @@ umask 0022
 if [ "$RUN" != "" ]; then
     # run chroot {{{
     #Sanity check
-    if [ ! -f "${working_dir}/.-chroot" ]; then
+    if [ ! -f "${working_dir}/.live-chroot" ]; then
 	echo "error: '${working_dir}' does not appear to be a Live chroot"
 	echo '       please build the image using mkroot'
 	exit 1
@@ -175,8 +175,8 @@ else
 	cp ${working_dir}/etc/locale.gen ${working_dir}/etc/locale.gen.bak
     fi
 
-    if [ ! -e "${working_dir}/.-chroot" ]; then
-	date +%s > "${working_dir}/.-chroot"
+    if [ ! -e "${working_dir}/.live-chroot" ]; then
+	date +%s > "${working_dir}/.live-chroot"
     fi
     # }}}
 fi

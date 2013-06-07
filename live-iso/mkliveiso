@@ -5,8 +5,8 @@ QUIET="y"
 FORCE="n"
 PACCONFIG="/etc/pacman.conf"
 export LABEL="KDEOS_$(date +%Y%m)"
-PUBLISHER="KdeOs <http://www.kde-os.tk>"
-APPLICATION="KdeOs Live/Rescue CD"
+PUBLISHER="KdeOS <http://www.kde-os.tk>"
+APPLICATION="KdeOS Live/Rescue CD"
 COMPRESSION="xz"
 CREATE_DEFAULT="n"
 INSTALL_DIR="live"
@@ -242,7 +242,7 @@ command_iso () {
     mkisofs ${qflag} -r -l \
         -b isolinux/isolinux.bin -c isolinux/boot.cat \
         -uid 0 -gid 0 \
-        -udf -allow-limited-size -iso-level 3 \
+        -udf -iso-level 3 \
         -input-charset utf-8 -p "prepared by mkliveiso" \
         -no-emul-boot -boot-load-size 4 -boot-info-table \
         -publisher "${PUBLISHER}" \
