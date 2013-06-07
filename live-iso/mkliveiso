@@ -149,7 +149,7 @@ command_create () {
         # Delete pacman database sync cache files (*.tar.gz)
         find "${work_dir}/root-image/var/lib/pacman" -maxdepth 1 -type f -delete
         # Delete pacman database sync cache
-        find "${work_dir}/root-image/var/lib/pacman/sync" -delete
+        #find "${work_dir}/root-image/var/lib/pacman/sync" -delete
         # Delete pacman package cache
         find "${work_dir}/root-image/var/cache/pacman/pkg" -type f -delete
         # Delete all log files, keeps empty dirs.
