@@ -1,20 +1,20 @@
 # x86_64 overlay pkgs config file
 # file format: repo:package
 
-#platform:nvidia-utils-313*
-#platform:nvidia-313*
-#platform:nvidia-304xx-utils*
-#platform:nvidia-304xx-3*
-#platform:nvidia-173xx-utils*
-#platform:nvidia-173xx-1*
+#main:nvidia-utils-313*
+#main:nvidia-313*
+#main:nvidia-304xx-utils*
+#main:nvidia-304xx-3*
+#main:nvidia-173xx-utils*
+#main:nvidia-173xx-1*
 
-#platform:catalyst-legacy-utils-1*
-#platform:catalyst-legacy-1*
-#platform:catalyst-1*
-#platform:catalyst-utils-1*
+#main:catalyst-legacy-utils-1*
+#main:catalyst-legacy-1*
+#main:catalyst-1*
+#main:catalyst-utils-1*
 
-#desktop:partitionmanager-1*
-#testing:kapudan-2*
+#apps:partitionmanager-1*
+#build:kapudan-2*
 
 #apps:spun-0.*
 
