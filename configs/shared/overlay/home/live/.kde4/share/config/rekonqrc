@@ -1,5 +1,5 @@
 [General]
-homePage=http://www.chakra-project.org/welcome.html
+homePage=about:home
 startupBehaviour=0
 
 [MainWindow][Toolbar MainToolBar]
