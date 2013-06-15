@@ -220,7 +220,7 @@ ttf-dejavu
 terminus-font
 ttf-liberation
 #wqy-zenhei
-wqy-microhei
+##wqy-microhei
 #ttf-indic-fonts
 
 # additional stuff that needs xorg
@@ -258,10 +258,10 @@ kde-workspace
 oxygen-icons
 
 # themes (including kapudan options)
-##kde-kdm-themes-grey
+kde-kdm-themes-grey
 kde-ksplash-themes-grey
-##kde-plasma-themes-caledonia
-##wallpapers-grey
+kde-plasma-themes-ProduktCaledoniaReloaded
+wallpapers-grey
 ##kapudan-kde-themes-caledonia
 ##kde-plasma-themes-helium
 kde-wallpapers

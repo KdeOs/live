@@ -92,7 +92,7 @@ ForegroundPositive=0,110,40
 ForegroundVisited=100,74,155
 
 [General]
-ColorScheme=Caledonia 6
+ColorScheme=Oxygen Platinum
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
