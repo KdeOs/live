@@ -220,8 +220,8 @@ ttf-dejavu
 terminus-font
 ttf-liberation
 #wqy-zenhei
-##wqy-microhei
-#ttf-indic-fonts
+wqy-microhei
+ttf-indic-otf
 
 # additional stuff that needs xorg
 hicolor-icon-theme
@@ -319,7 +319,7 @@ hwinfo
 ##tribe                                                                                                                                                              
 
 # extragear
-quassel
+##quassel
 rekonq
 #kde-baseapps-konqueror
 #kwebkitpart

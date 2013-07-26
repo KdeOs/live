@@ -13,7 +13,7 @@ Useu aquest menú per a seleccionar la funció desitjada. Si teniu problemes per
 optOpcions d'arrencada: Les opcions d'arrencada poden canviar completament el comportament del vostre sistema. Són arranjaments del nucli del sistema.
 helpF1 Ajuda: És sensible al context. Mostra pantalles diferents depenent de l'element actiu de la pantalla d'inici. També hi ha disponible una descripció d'aquest sistema d'ajuda.
 keytableF2: Estableix l'idioma i el mapa de teclat usats pel carregador d'arrencada. Aquesta opció determina l'arranjament del sistema live.
-videomodeF3 Mode de vídeo: Aquí podeu triar entre diferents resolucions de pantalla pel sistema live. Si trobeu problemes amb la instal·lació gràfica, el Mode text podria ser una solució.keytableSelecció d'idioma i disposició del teclatPremeu F2 per a canviar l'idioma i la disposició del teclat.
+videomodeF4 Mode de vídeo: Aquí podeu triar entre diferents resolucions de pantalla pel sistema live. Si trobeu problemes amb la instal·lació gràfica, el Mode text podria ser una solució.keytableSelecció d'idioma i disposició del teclatPremeu F2 per a canviar l'idioma i la disposició del teclat.
 Torna a mainAjuda del gestor d'arrencadamemtestProva de memòriaLa prova de memòria proporciona una bona opció per a sotmetre el maquinari a una prova d'estres. El seu propòsit principal és detectar RAM trencada, però també estressa altres parts del sistema.
 No hi ha cap garantia que la memòria sigui bona si no es troba cap error però la prova trobara la majoria de defectes.
 Torna a mainAjuda del gestor d'arrencadanoacpiDeshabilita ACPIEl maquinari actual requereix normalment l'ACPI (interfície de configuració avançada i alimentació elèctrica) per a controlar la gestió d'interrupcions. L'ACPI reemplaça completament l'antic sistema APM.
@@ -33,7 +33,7 @@ Algun ordinadors nous poden tenir més avantatge del sistema actual o_acpiACPI
 Torna a optOpcions d'arrencadao_ideOpcions del nucli: ideL'IDE és, contràriament a SCSI, usat de forma comuna a moltes estacions de treball. Per a solucionar alguns problemes de maquinari, que poden ocórrer amb l'IDE, useu el paràmetre del nucli: 
   • ide=nodma -- apaga la DMA per a unitats IDE
 Torna a optOpcions d'arrencadastartInici del sistema Chakra LiveSeleccioneu aquesta opció per començar a usar aquest suport de Chakra Live.
-Torna a mainAjuda del gestor d'arrencadavideomodeSelecció del mode de vídeoPremeu F3 per a obtenir una llista dels modes de vídeo implementats per la vostra targeta gràfica. Se selecciona automàticament el mode més alt que pot acceptar la vostra pantalla.
+Torna a mainAjuda del gestor d'arrencadavideomodeSelecció del mode de vídeoPremeu F4 per a obtenir una llista dels modes de vídeo implementats per la vostra targeta gràfica. Se selecciona automàticament el mode més alt que pot acceptar la vostra pantalla.
 Possiblement el vostre monitor no pugui detectar-se automàticament, En aquest cas, seleccioneu el vostre mode preferit manualment.
 Si teniu problemes amb la targeta gràfica en iniciar, proveu el mode text com a possible solució.
 Torna a mainAjuda del gestor d'arrencada 
