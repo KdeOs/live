@@ -1,5 +1,5 @@
 [General]
-homePage=about:home
+homePage=rekonq:home
 startupBehaviour=0
 
 [MainWindow][Toolbar MainToolBar]

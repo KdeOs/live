@@ -1,6 +1,3 @@
-[$Version]
-update_info=kwin.upd:kde3.2Xinerama,kded.upd:kde3.0
-
 [ColorEffects:Disabled]
 Color=112,111,110
 ColorAmount=0
@@ -11,6 +8,7 @@ IntensityAmount=0.1
 IntensityEffect=2
 
 [ColorEffects:Inactive]
+ChangeSelectionColor=true
 Color=112,111,110
 ColorAmount=0.025
 ColorEffect=2
@@ -91,24 +89,19 @@ ForegroundPositive=0,110,40
 ForegroundVisited=100,74,155
 
 [General]
-Name=Oxygen Platinum
+ColorScheme=Oxygen Platinum
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
-desktopFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
-fixed=Monospace,9,-1,5,50,0,0,0,0,0
-font=DejaVu Sans,9,-1,5,50,0,0,0,0,0
-menuFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-smallestReadableFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
-taskbarFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
-toolBarFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
 
 [KDE]
 contrast=7
 
 [WM]
 activeBackground=195,195,195
+activeBlend=255,255,255
 activeForeground=255,255,255
 inactiveBackground=224,223,223
+inactiveBlend=75,71,67
 inactiveForeground=20,19,18
