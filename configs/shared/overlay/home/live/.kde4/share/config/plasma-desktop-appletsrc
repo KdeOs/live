@@ -26,10 +26,10 @@ zvalue=0
 
 [Containments][1][Wallpaper][image]
 slideTimer=10
-slidepaths=/usr/share/wallpapers/
+slidepaths=
 userswallpapers=
-wallpaper=/usr/share/wallpapers/grey
-wallpapercolor=56,111,150
+wallpaper=/usr/share/wallpapers/grey/
+wallpapercolor=0,0,0
 wallpaperposition=0
 
 [Containments][3]
@@ -40,18 +40,7 @@ immutability=1
 location=4
 plugin=panel
 screen=0
-zvalue=150
-
-[Containments][3][Applets][4]
-immutability=1
-plugin=launcher
 zvalue=0
-
-[Containments][3][Applets][4][LayoutInformation]
-Order=0
-
-[Containments][3][Applets][4][Shortcuts]
-global=Alt+F1
 
 [Containments][3][Applets][54]
 geometry=72,3,941,32
@@ -101,7 +90,31 @@ sourceAppletPluginName=systemtray
 [Containments][3][Applets][6][LayoutInformation]
 Order=2
 
-[Containments][3][Applets][6][PopupApplet]
+[Containments][3][Applets][61]
+geometry=0,3,32,32
+immutability=1
+plugin=appmenu-qml
+zvalue=4
+
+[Containments][3][Applets][61][Configuration][General]
+favorites=octopi.desktop,qupzilla.desktop,kde4-dragonplayer.desktop,kde4-systemsettings.desktop,kde4-dolphin.desktop,kde4-yakuake.desktop,kde4-kinfocenter.desktop,kde4-ksysguard.desktop,kde4-kate.desktop
+numOfColumns=3
+
+[Containments][3][Applets][61][LayoutInformation]
+Order=0
+
+[Containments][3][Applets][61][PopupApplet]
+DialogHeight=700
+DialogWidth=700
+
+[Containments][3][Applets][61][Shortcuts]
+global=Alt+F1
+
+[Containments][3][Applets][62]
+geometry=36,3,32,32
+immutability=1
+plugin=org.kde.showActivityManager
+zvalue=0
 
 [Containments][3][Applets][8]
 immutability=1
@@ -120,3 +133,4 @@ sourceAppletPluginName=digital-clock
 
 [Containments][3][Applets][8][LayoutInformation]
 Order=3
+

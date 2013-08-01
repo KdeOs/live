@@ -7,15 +7,15 @@ if [ ! -e options.conf ] ; then
     exit
 fi
 
-if [ ! -e /usr/share/liveiso/functions/colors ] || [ ! -e /usr/share/liveiso/functions/messages ] ; then
+if [ ! -e /usr/share/kdeosiso/functions/colors ] || [ ! -e /usr/share/kdeosiso/functions/messages ] ; then
     echo " "
-    echo "missing live functions file, please run «sudo make install» inside live-iso/"
+    echo "missing kdeos-live functions file, please run «sudo make install» inside kdeos-iso/"
     echo " "
     exit
 fi
 
-source /usr/share/liveiso/functions/colors
-.  /usr/share/liveiso/functions/messages
+source /usr/share/kdeosiso/functions/colors
+.  /usr/share/kdeosiso/functions/messages
 . options.conf
 
 # do UID checking here so someone can at least get usage instructions
@@ -52,7 +52,7 @@ export LC_MESSAGES=C
 make_root_image() {
     if [[ ! -e ${work_dir}/build.${FUNCNAME} ]]; then
          echo -e -n "$_r >$_W Base installation (root-image) \n $_n"
-         mkliveiso -v -C pacman.conf -a "${arch}" -D "${install_dir}" -p "${packages}" create "${work_dir}"
+         mkkdeosiso -v -C pacman.conf -a "${arch}" -D "${install_dir}" -p "${packages}" create "${work_dir}"''
          pacman -Qr "${work_dir}/root-image" > "${work_dir}/root-image/root-image-pkgs.txt"
          cp ${work_dir}/root-image/etc/locale.gen.bak ${work_dir}/root-image/etc/locale.gen
          : > ${work_dir}/build.${FUNCNAME}
@@ -60,28 +60,12 @@ make_root_image() {
     fi
 }
 
-# Prepare ${install_dir}/boot/
-#make_boot() {
-#    if [[ ! -e ${work_dir}/build.${FUNCNAME} ]]; then
-#	echo -e -n "$_r >$_W Prepare ${install_dir}/boot/ \n $_n"
-#	mkdir -p ${work_dir}/iso/${install_dir}/boot/${arch}
-#	cp ${work_dir}/root-image/boot/vmlinuz-linux ${work_dir}/iso/${install_dir}/boot/${arch}/liveiso
-#	cp -Lr boot-files/isolinux ${work_dir}/iso/
-#	cp ${work_dir}/root-image/usr/lib/syslinux/isolinux.bin ${work_dir}/iso/isolinux/
-#	cp /usr/lib/initcpio/hooks/live* ${work_dir}/root-image/usr/lib/initcpio/hooks
-#	mkinitcpio -c ./mkinitcpio.conf -g ${work_dir}/root-image -k $_kernver -g ${work_dir}/iso/${install_dir}/boot/${arch}/liveiso.img
-#	rm ${work_dir}/root-image/usr/lib/initcpio/hooks/live*
-#	: > ${work_dir}/build.${FUNCNAME}
-#	echo -e "$_g >$_W done $_n"
-#    fi
-#}
-
 make_boot() {
     if [[ ! -e ${work_dir}/build.${FUNCNAME} ]]; then
 	echo -e -n "$_r >$_W Prepare ${install_dir}/boot/ \n $_n"
 	mkdir -p ${work_dir}/iso/${install_dir}/boot/${arch}
         #cp ${work_dir}/root-image/boot/memtest86+/memtest.bin ${work_dir}/iso/${install_dir}/boot/${arch}/memtest
-	cp ${work_dir}/root-image/boot/vmlinuz* ${work_dir}/iso/${install_dir}/boot/${arch}/liveiso
+	cp ${work_dir}/root-image/boot/vmlinuz* ${work_dir}/iso/${install_dir}/boot/${arch}/kdeosiso
 	cp -Lr boot-files/isolinux ${work_dir}/iso/
 	cp ${work_dir}/root-image/usr/lib/syslinux/isolinux.bin ${work_dir}/iso/isolinux/
         mkdir -p ${work_dir}/boot-image
@@ -92,12 +76,12 @@ make_boot() {
         mount -t proc none ${work_dir}/boot-image/proc
         mount -t sysfs none ${work_dir}/boot-image/sys
         mount -o bind /dev ${work_dir}/boot-image/dev
-        cp /usr/lib/initcpio/hooks/live* ${work_dir}/boot-image/usr/lib/initcpio/hooks
-        cp /usr/lib/initcpio/install/live* ${work_dir}/boot-image/usr/lib/initcpio/install
+        cp /usr/lib/initcpio/hooks/kdeos* ${work_dir}/boot-image/usr/lib/initcpio/hooks
+        cp /usr/lib/initcpio/install/kdeos* ${work_dir}/boot-image/usr/lib/initcpio/install
         cp mkinitcpio.conf ${work_dir}/boot-image/etc/mkinitcpio.conf
         _kernver=`cat ${work_dir}/boot-image/lib/modules/*/version`
-        chroot ${work_dir}/boot-image /usr/bin/mkinitcpio -k ${_kernver} -c /etc/mkinitcpio.conf -g /boot/liveiso.img
-        mv ${work_dir}/boot-image/boot/liveiso.img ${work_dir}/iso/${install_dir}/boot/${arch}/liveiso.img
+        chroot ${work_dir}/boot-image /usr/bin/mkinitcpio -k ${_kernver} -c /etc/mkinitcpio.conf -g /boot/kdeosiso.img
+        mv ${work_dir}/boot-image/boot/kdeosiso.img ${work_dir}/iso/${install_dir}/boot/${arch}/kdeosiso.img
         umount -f ${work_dir}/boot-image/proc ${work_dir}/boot-image/sys ${work_dir}/boot-image/dev ${work_dir}/boot-image
         rm -R ${work_dir}/boot-image
 	: > ${work_dir}/build.${FUNCNAME}
@@ -158,7 +142,7 @@ make_isomounts() {
 # Build ISO
 make_iso() {
         echo -e -n "$_r >$_W Build ISO \n $_n"
-        mkliveiso "${verbose}" "${overwrite}" -D "${install_dir}" -L "${iso_label}" -a "${arch}" -c "${compression}" "${high_compression}" iso "${work_dir}" "${name}-${version}-${arch}.iso"
+        mkkdeosiso "${verbose}" "${overwrite}" -D "${install_dir}" -L "${iso_label}" -a "${arch}" -c "${compression}" "${high_compression}" iso "${work_dir}" "${name}-${version}-${arch}.iso"
         echo -e "$_g >$_W done $_n"
 }
 

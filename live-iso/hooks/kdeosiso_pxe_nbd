@@ -55,11 +55,11 @@ run_hook () {
 
         nbdserver=${rootserver}
 
-        mount_handler="liveiso_pxe_nbd_mount_handler"
+        mount_handler="kdeosiso_pxe_nbd_mount_handler"
     fi
 }
 
-liveiso_pxe_nbd_mount_handler () {
+kdeosiso_pxe_nbd_mount_handler () {
     newroot="${1}"
 
     # Module autoloading like with loop devices does not work, doing manually...
@@ -74,14 +74,14 @@ liveiso_pxe_nbd_mount_handler () {
 
     msg "::: Setup NBD from ${nbdserver} at /dev/nbd0"
     if [ "${copytoram}" = "y" ]; then
-        nbd-client ${nbdserver} -N liveiso /dev/nbd0
+        nbd-client ${nbdserver} -N kdeosiso /dev/nbd0
     else
-        nbd-client ${nbdserver} -N liveiso /dev/nbd0 -persist
+        nbd-client ${nbdserver} -N kdeosiso /dev/nbd0 -persist
     fi
 
-    liveisodevice=/dev/nbd0
+    kdeosisodevice=/dev/nbd0
 
-    liveiso_mount_handler ${newroot}
+    kdeosiso_mount_handler ${newroot}
 
     if [ "${copytoram}" = "y" ]; then
         msg "::: Disconnect NBD from ${nbdserver} at /dev/nbd0"

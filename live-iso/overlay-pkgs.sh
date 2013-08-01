@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Configs
-source /usr/share/liveiso/functions/colors
-.  /usr/share/liveiso/functions/messages
+source /usr/share/kdeosiso/functions/colors
+.  /usr/share/kdeosiso/functions/messages
 
 # Variables
 CURRENTDIR=$(pwd)
@@ -35,7 +35,7 @@ fi
 
 # Create TempDir and move into it
 echo -e "$_r >$_W Updating overlay packages ... $_n"
-mkdir -p ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/live/pkgs &>/dev/null
+mkdir -p ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/kdeos/pkgs &>/dev/null
 echo -e -n "$_r >$_W Removing temporary directories ... $_n"
 rm -rf temp &>/dev/null
 echo -e "$_g done $_n"
@@ -59,13 +59,13 @@ _repos=( $( printf "%s\n" "${_repos[@]}" | awk 'x[$0]++ == 0' ) )
 
 # Remove old stuff
 echo -e -n "$_r >$_W Removing old packages ... $_n"
-rm -rf ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/live/pkgs/*.pkg* &>/dev/null
+rm -rf ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/kdeos/pkgs/*.pkg* &>/dev/null
 echo -e "$_g done $_n"
 
 # Move downloaded packages into overlay
 echo -e -n "$_r >$_W Moving new packages into overlay ... $_n"
 for _re in ${_repos[@]} ; do
-    mv -v ${CURRENTDIR}/temp/${_re}/$ARCHITECTURE/*.pkg.tar.*z ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/live/pkgs/ &>/dev/null
+    mv -v ${CURRENTDIR}/temp/${_re}/$ARCHITECTURE/*.pkg.tar.*z ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/kdeos/pkgs/ &>/dev/null
 done
 echo -e "$_g done $_n"
 echo " "
@@ -79,7 +79,7 @@ echo " "
 # show packages
 echo -e "$_r >$_W List of fetched packages: $_n"
 echo " "
-ls -1 ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/live/pkgs/
+ls -1 ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/kdeos/pkgs/
 
 echo " "
 echo -e "$_g >$_W All done ! $_n"
@@ -88,7 +88,7 @@ echo " "
 # Create /etc/nvidia-drv.conf
 #echo -e -n "$_r >$_W Create /etc/nvidia-drv.conf ... $_n"
 #mkdir -p ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/etc
-#NVIDIA_DRV_VER=`ls -1 ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/live/pkgs/ | grep nvidia-2 | cut -d- -f2 | cut -d. -f1`
+#NVIDIA_DRV_VER=`ls -1 ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/kdeos/pkgs/ | grep nvidia-2 | cut -d- -f2 | cut -d. -f1`
 #echo "NVIDIA_DRV_VER=\"${NVIDIA_DRV_VER}\"" > ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/etc/nvidia-drv.conf
 #echo -e "$_g done $_n"
 

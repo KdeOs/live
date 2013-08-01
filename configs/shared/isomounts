@@ -1,4 +1,4 @@
-# liveiso isomounts file
+# kdeosiso isomounts file
 # img - location of image/directory to mount relative to addons directory
 # arch - architecture of this image
 # mount point - absolute location on the post-initrd root

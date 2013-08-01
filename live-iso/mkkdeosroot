@@ -117,9 +117,9 @@ umask 0022
 if [ "$RUN" != "" ]; then
     # run chroot {{{
     #Sanity check
-    if [ ! -f "${working_dir}/.live-chroot" ]; then
-	echo "error: '${working_dir}' does not appear to be a Live chroot"
-	echo '       please build the image using mkroot'
+    if [ ! -f "${working_dir}/.kdeos-chroot" ]; then
+	echo "error: '${working_dir}' does not appear to be a Chakra chroot"
+	echo '       please build the image using mkkdeosroot'
 	exit 1
     fi
 
@@ -154,7 +154,7 @@ else
     if [ $# -ne 0 ]; then
 	op='-Sy'
 	if [ "$FORCE" = "y" ]; then
-	    pacargs="${pacargs} --force"
+            pacargs="${pacargs} --force"
 	fi
 	pacman ${op} ${pacargs} $@ || chroot_umount_and_exit
     fi
@@ -175,8 +175,8 @@ else
 	cp ${working_dir}/etc/locale.gen ${working_dir}/etc/locale.gen.bak
     fi
 
-    if [ ! -e "${working_dir}/.live-chroot" ]; then
-	date +%s > "${working_dir}/.live-chroot"
+    if [ ! -e "${working_dir}/.kdeos-chroot" ]; then
+	date +%s > "${working_dir}/.kdeos-chroot"
     fi
     # }}}
 fi

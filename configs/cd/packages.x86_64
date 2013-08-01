@@ -1,5 +1,5 @@
-# Live Packages file
-# Version: 20130607
+# KdeOS-Live Packages file
+# Version: 20130801
 
 ### These should probably be present
 base
@@ -71,7 +71,7 @@ lsb-release
 # basic needs
 systemd
 nbd
-hardware-detection
+kdeos-hardware-detection
 hwd
 syslinux
 grub-common
@@ -156,7 +156,7 @@ isl3887usb-firmware
 isl3890-firmware
 linux-firmware
 zd1211-firmware
-amd-ucode
+#amd-ucode  part of linux-firmware 07-26 2013
 intel-ucode
 
 # xorg base
@@ -257,13 +257,11 @@ kde-baseapps-konsole
 kde-workspace
 oxygen-icons
 
-# themes (including kapudan options)
+# themes 
 kde-kdm-themes-grey
 kde-ksplash-themes-grey
-kde-plasma-themes-ProduktCaledoniaReloaded
+kde-plasma-themes-Kotonaru
 wallpapers-grey
-##kapudan-kde-themes-caledonia
-##kde-plasma-themes-helium
 kde-wallpapers
 grub-themes-monochrome
 python2-xlib
@@ -284,7 +282,7 @@ kdegraphics-okular
 kdeutils-ark
 kdeutils-kgpg
 kdeutils-sweeper
-##kdeplasma-applets-welcome-plasmoid
+kdeplasma-applets-welcome-plasmoid
 kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
 ##kdenetwork-kget
@@ -319,23 +317,18 @@ hwinfo
 ##tribe                                                                                                                                                              
 
 # extragear
-##quassel
-rekonq
-#kde-baseapps-konqueror
-#kwebkitpart
-#konq-plugins 
-#qupzilla
+quassel
+#rekonq
+qupzilla
 bluedevil
 yakuake
-#bangarang
 #qmmp
 #vlc
 kdemultimedia-dragonplayer
 ##amarok
-#quick-usb-formatter ##broken
-##kde-gtk-config
+kde-gtk-config
 ##oxygen-gtk-icons
-oxygen-gtk2
+##oxygen-gtk2
 imagewriter
 tomoyo-tools
 python2-gobject3
@@ -343,14 +336,13 @@ spun-live
 ##clamav
 init-live
 #kdeplasma-addons-applets-lancelot
-#kdeplasma-addons-applets-takeoff
 #kdeplasma-applets-homerun 
 kdeplasma-applets-appmenu-qml
+octopi
+kio-mtp
 
 #xbmc
-##minitube #crashing/unstable
 #qt5
-#q4wine
 #blender
 ##kdenlive
 ##spideroak
@@ -379,8 +371,6 @@ gdb
 ##samba
 
 # office
-#libreoffice-en-US
-#libreoffice
 ##calligra
 
 # games

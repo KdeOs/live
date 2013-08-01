@@ -63,51 +63,51 @@ run_hook() {
         copytoram_size="75%"
     fi
 
-    if [ "x${liveisobasedir}" = "x" ]; then
-        liveisobasedir="live"
+    if [ "x${kdeosisobasedir}" = "x" ]; then
+        kdeosisobasedir="kdeos"
     fi
 
     if [ "x${isomounts}" != "x" ]; then
         isomounts="/bootmnt/${isomounts}"
     else
-        isomounts="/bootmnt/${liveisobasedir}/isomounts"
+        isomounts="/bootmnt/${kdeosisobasedir}/isomounts"
     fi
 
-    if [ "x${liveisodevice}" = "x" ]; then
-        liveisodevice="/dev/disk/by-label/${liveisolabel}"
+    if [ "x${kdeosisodevice}" = "x" ]; then
+        kdeosisodevice="/dev/disk/by-label/${kdeosisolabel}"
     fi
 
-    # set mount handler for liveiso
-    mount_handler="liveiso_mount_handler"
+    # set mount handler for kdeosiso
+    mount_handler="kdeosiso_mount_handler"
 }
 
-liveiso_mount_handler() {
+kdeosiso_mount_handler() {
     local newroot="${1}"
 
     msg ":: Waiting for boot device..."
-    while ! poll_device ${liveisodevice} 30; do
+    while ! poll_device ${kdeosisodevice} 30; do
         echo "ERROR: boot device didn't show up after 30 seconds..."
         echo "   Falling back to interactive prompt"
         echo "   You can try to fix the problem manually, log out when you are finished"
         launch_interactive_shell
     done
 
-    FSTYPE=$(blkid -o value -s TYPE -p ${liveisodevice} 2> /dev/null)
+    FSTYPE=$(blkid -o value -s TYPE -p ${kdeosisodevice} 2> /dev/null)
     if [ -n "${FSTYPE}" ]; then
-        if mount -r -t "${FSTYPE}" ${liveisodevice} /bootmnt > /dev/null 2>&1; then
+        if mount -r -t "${FSTYPE}" ${kdeosisodevice} /bootmnt > /dev/null 2>&1; then
             if [ -e "${isomounts}" ]; then
-                echo ":: Mounted liveiso volume successfully."
+                echo ":: Mounted kdeosiso volume successfully."
                 fserror="0"
             else
                 echo "ERROR: Mounting was successful, but the ${isomounts} file does not exist."
                 fserror="1"
             fi
         else
-            echo "ERROR; Failed to mount ${liveisodevice} (FS is ${FSTYPE})"
+            echo "ERROR; Failed to mount ${kdeosisodevice} (FS is ${FSTYPE})"
             fserror="1"
         fi
     else
-        echo "ERROR: ${liveisodevice} found, but the filesystem type is unknown."
+        echo "ERROR: ${kdeosisodevice} found, but the filesystem type is unknown."
         fserror="1"
     fi
 
@@ -141,12 +141,12 @@ liveiso_mount_handler() {
 
         [ "$imgarch" != "$arch" ] && continue
 
-        [ ! -r "/bootmnt/${liveisobasedir}/${img}" ] && continue
+        [ ! -r "/bootmnt/${kdeosisobasedir}/${img}" ] && continue
 
         if [ "${type}" = "bind" ]; then
-            _mnt_bind "/bootmnt/${liveisobasedir}/${img}" "${newroot}${mountpoint}"
+            _mnt_bind "/bootmnt/${kdeosisobasedir}/${img}" "${newroot}${mountpoint}"
         elif [ "${type}" = "squashfs" ]; then
-            _mnt_squashfs "/bootmnt/${liveisobasedir}/${img}" "${newroot}${mountpoint}"
+            _mnt_squashfs "/bootmnt/${kdeosisobasedir}/${img}" "${newroot}${mountpoint}"
         fi
     done < "${isomounts}"
 

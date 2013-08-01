@@ -9,7 +9,7 @@ PUBLISHER="KdeOS <http://www.kde-os.tk>"
 APPLICATION="KdeOS Live/Rescue CD"
 COMPRESSION="xz"
 CREATE_DEFAULT="n"
-INSTALL_DIR="live"
+INSTALL_DIR="kdeos"
 
 APPNAME=$(basename "${0}")
 
@@ -32,7 +32,7 @@ usage ()
     echo "    -D <install_dir> Set an install_dir. All files will by located here on ISO (except for isolinux)"
     echo "                     Default $INSTALL_DIR"
     echo "                     NOTE: Max 8 characters, use only [a-z0-9]"
-    echo "    -d               Create default user directory /home/live"
+    echo "    -d               Create default user directory /home/kdeos"
     echo "    -v               Enable verbose output"
     echo "    -h               This message"
     echo " commands:"
@@ -109,10 +109,10 @@ _pacman ()
 {
     local ret
     if [ "${QUIET}" = "y" ]; then
-        mkliveroot -n -C "$PACCONFIG" -f "${work_dir}/root-image" $* 2>&1 >/dev/null || exit
+        mkkdeosroot -n -C "$PACCONFIG" -f "${work_dir}/root-image" $* 2>&1 >/dev/null || exit
         ret=$?
     else
-        mkliveroot -n -C "$PACCONFIG" -f "${work_dir}/root-image" $* || exit
+        mkkdeosroot -n -C "$PACCONFIG" -f "${work_dir}/root-image" $* || exit
         ret=$?
     fi
 
@@ -225,7 +225,7 @@ _imgcommon () {
         fi
     fi
 
-    if ! sed "s|%CHAKRAISO_LABEL%|${LABEL}|g;
+    if ! sed "s|%KDEOSISO_LABEL%|${LABEL}|g;
               s|%INSTALL_DIR%|${INSTALL_DIR}|g;
               s|%ARCH%|${ARCH}|g" -i ${work_dir}/iso/isolinux/*.cfg; then
         echo "Error: ${work_dir}/iso/isolinux/isolinux.cfg, doesn't exist, aborting."
@@ -243,7 +243,7 @@ command_iso () {
         -b isolinux/isolinux.bin -c isolinux/boot.cat \
         -uid 0 -gid 0 \
         -udf -iso-level 3 \
-        -input-charset utf-8 -p "prepared by mkliveiso" \
+        -input-charset utf-8 -p "prepared by mkkdeosiso" \
         -no-emul-boot -boot-load-size 4 -boot-info-table \
         -publisher "${PUBLISHER}" \
         -A "${APPLICATION}" \

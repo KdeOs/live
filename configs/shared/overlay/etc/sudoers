@@ -38,8 +38,9 @@ live    ALL=NOPASSWD: /usr/lib/tribe/tribelauncherworker
 # Samples
 # %users  ALL=/sbin/mount /cdrom,/sbin/umount /cdrom
 # %users  localhost=/sbin/shutdown -h now
-%bundle ALL=NOPASSWD: /bin/mount -o loop -t squashfs *
-%bundle ALL=NOPASSWD: /bin/mount -o loop -t ext4 *
-%bundle ALL=NOPASSWD: /bin/umount *
-%bundle ALL=NOPASSWD: /usr/bin/pacman -Sy
-%bundle ALL=NOPASSWD: /usr/bin/yaourt -Sy
+
+# %bundle ALL=NOPASSWD: /bin/mount -o loop -t squashfs *
+# %bundle ALL=NOPASSWD: /bin/mount -o loop -t ext4 *
+# %bundle ALL=NOPASSWD: /bin/umount *
+# %bundle ALL=NOPASSWD: /usr/bin/pacman -Sy
+# %bundle ALL=NOPASSWD: /usr/bin/yaourt -Sy
