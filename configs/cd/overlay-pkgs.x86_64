@@ -1,8 +1,8 @@
 # x86_64 overlay pkgs config file
 # file format: repo:package
 
-#main:nvidia-utils-313*
-#main:nvidia-313*
+#build:nvidia-utils*
+#build:nvidia-3*
 #main:nvidia-304xx-utils*
 #main:nvidia-304xx-3*
 #main:nvidia-173xx-utils*

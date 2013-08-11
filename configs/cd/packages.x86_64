@@ -1,5 +1,5 @@
 # KdeOS-Live Packages file
-# Version: 20130801
+# Version: 20130810
 
 ### These should probably be present
 base
@@ -296,9 +296,10 @@ appmenu-qt
 # locales
 #kde-l10n-ca
 #kde-l10n-de
-#kde-l10n-es
+kde-l10n-es
 #kde-l10n-fr
 #kde-l10n-it
+kde-l10n-nl
 
 #kde-l10n
 
@@ -314,7 +315,8 @@ kdebindings-smokekde
 kdebindings-pykde4
 netctl   
 hwinfo
-##tribe                                                                                                                                                              
+tribe       
+#live-installer
 
 # extragear
 quassel
@@ -328,11 +330,11 @@ kdemultimedia-dragonplayer
 ##amarok
 kde-gtk-config
 ##oxygen-gtk-icons
-##oxygen-gtk2
+oxygen-gtk2
 imagewriter
 tomoyo-tools
 python2-gobject3
-spun-live
+spun
 ##clamav
 init-live
 #kdeplasma-addons-applets-lancelot
