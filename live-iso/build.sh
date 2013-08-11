@@ -55,6 +55,7 @@ make_root_image() {
          mkkdeosiso -v -C pacman.conf -a "${arch}" -D "${install_dir}" -p "${packages}" create "${work_dir}"''
          pacman -Qr "${work_dir}/root-image" > "${work_dir}/root-image/root-image-pkgs.txt"
          cp ${work_dir}/root-image/etc/locale.gen.bak ${work_dir}/root-image/etc/locale.gen
+         rm ${work_dir}/root-image/boot/grub/grub.cfg
          : > ${work_dir}/build.${FUNCNAME}
          echo -e "$_g >$_W done $_n"
     fi
