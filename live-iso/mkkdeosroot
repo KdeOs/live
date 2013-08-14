@@ -118,7 +118,7 @@ if [ "$RUN" != "" ]; then
     # run chroot {{{
     #Sanity check
     if [ ! -f "${working_dir}/.kdeos-chroot" ]; then
-	echo "error: '${working_dir}' does not appear to be a Chakra chroot"
+	echo "error: '${working_dir}' does not appear to be a KdeOS chroot"
 	echo '       please build the image using mkkdeosroot'
 	exit 1
     fi
