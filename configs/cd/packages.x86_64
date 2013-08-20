@@ -1,64 +1,11 @@
 # KdeOS-Live Packages file
-# Version: 20130810
+# Version: 20130817
 
 ### These should probably be present
-base
-device-mapper 
-filesystem 
-lvm2 
-pcmciautils 
-util-linux
-pacman-mirrorlist
+base  
 attr
 bash
 binutils
-bzip2
-coreutils
-cryptsetup
-cronie
-dhcpcd
-diffutils
-e2fsprogs
-file
-findutils
-gawk
-gcc-libs
-gettext 
-glibc  
-grep 
-gzip
-iputils 
-jfsutils 
-less
-libpipeline 
-licenses  
-linux  
-logrotate 
-mailx
-man-pages 
-mdadm  
-nano
-net-tools  
-pacman  
-pciutils  
-perl  
-ppp
-procps-ng 
-psmisc 
-reiserfsprogs 
-rp-pppoe  
-sed  
-shadow 
-sysfsutils   
-tar   
-texinfo
-usbutils
-vi
-wget
-which
-wpa_supplicant
-xfsprogs
-
 syslinux
 cdrkit
 sshfs
@@ -69,7 +16,6 @@ squashfs-tools
 lsb-release
 
 # basic needs
-systemd
 nbd
 kdeos-hardware-detection
 hwd
@@ -84,10 +30,6 @@ bc
 virtuoso
 xdelta3
 avahi
-e2fsprogs
-xfsprogs
-jfsutils
-reiserfsprogs
 ntfs-3g
 dosfstools
 gptfdisk
@@ -111,11 +53,8 @@ libstdc++5
 bash-completion
 openssh
 ##nmap
-dosfstools
 lsof
-vi
 vim
-nano
 sudo
 mlocate
 man-db
@@ -133,7 +72,6 @@ zip
 #ndiswrapper-utils
 wireless_tools
 wireless-regdb
-iputils
 dnsutils
 crda
 usb_modeswitch
@@ -327,7 +265,7 @@ yakuake
 #qmmp
 #vlc
 kdemultimedia-dragonplayer
-##amarok
+amarok
 kde-gtk-config
 ##oxygen-gtk-icons
 oxygen-gtk2
@@ -373,7 +311,7 @@ gdb
 ##samba
 
 # office
-##calligra
+calligra
 
 # games
 ##kdegames-kpat
