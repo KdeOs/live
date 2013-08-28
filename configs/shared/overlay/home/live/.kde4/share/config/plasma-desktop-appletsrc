@@ -21,7 +21,7 @@ zvalue=0
 [Containments][1][Applets][46]
 geometry=3,0,508,448
 immutability=1
-plugin=org.kdeos.welcome-kdeos
+plugin=org.kaos.welcome-kaos
 zvalue=0
 
 [Containments][1][Wallpaper][image]
