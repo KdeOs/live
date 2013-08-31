@@ -9,7 +9,7 @@ fi
 
 if [ ! -e /usr/share/kdeosiso/functions/colors ] || [ ! -e /usr/share/kdeosiso/functions/messages ] ; then
     echo " "
-    echo "missing kdeos-live functions file, please run «sudo make install» inside kdeos-iso/"
+    echo "missing kaos-live functions file, please run «sudo make install» inside live-iso/"
     echo " "
     exit
 fi
@@ -96,7 +96,7 @@ make_overlay() {
         echo -e -n "$_r >$_W Prepare overlay-image \n $_n"
         mkdir -p ${work_dir}/overlay/etc/pacman.d
         cp -Lr overlay ${work_dir}/
-        wget -O ${work_dir}/overlay/etc/pacman.d/mirrorlist http://github.com/KdeOs/core/raw/master/pacman-mirrorlist/mirrorlist
+        wget -O ${work_dir}/overlay/etc/pacman.d/mirrorlist http://github.com/KaOSx/core/raw/master/pacman-mirrorlist/mirrorlist
         sed -i "s/#Server/Server/g" ${work_dir}/overlay/etc/pacman.d/mirrorlist
         sed -i -e "s/@carch@/${arch}/g" ${work_dir}/overlay/etc/pacman.d/mirrorlist
        

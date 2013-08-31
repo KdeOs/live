@@ -1,8 +1,8 @@
 # x86_64 overlay pkgs config file
 # file format: repo:package
 
-#build:nvidia-utils*
-#build:nvidia-3*
+main:nvidia-utils*
+build:nvidia-3*
 #main:nvidia-304xx-utils*
 #main:nvidia-304xx-3*
 #main:nvidia-173xx-utils*
@@ -13,7 +13,7 @@
 #main:catalyst-1*
 #main:catalyst-utils-1*
 
-#apps:partitionmanager-1*
+apps:partitionmanager-1*
 #build:kapudan-2*
 
 #apps:spun-0.*

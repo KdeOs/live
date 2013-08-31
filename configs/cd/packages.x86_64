@@ -238,6 +238,7 @@ kde-l10n-es
 #kde-l10n-fr
 #kde-l10n-it
 kde-l10n-nl
+kde-l10n-pt_BR
 
 #kde-l10n
 
@@ -265,7 +266,7 @@ yakuake
 #qmmp
 #vlc
 kdemultimedia-dragonplayer
-amarok
+##amarok
 kde-gtk-config
 ##oxygen-gtk-icons
 oxygen-gtk2
@@ -280,6 +281,7 @@ init-live
 kdeplasma-applets-appmenu-qml
 octopi
 kio-mtp
+inxi
 
 #xbmc
 #qt5
@@ -311,7 +313,7 @@ gdb
 ##samba
 
 # office
-calligra
+##calligra
 
 # games
 ##kdegames-kpat

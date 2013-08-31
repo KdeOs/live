@@ -47,7 +47,10 @@ echo -e -n "$_r >$_W Getting packages ... $_n"
 for _p in ${_overlaypkgs[@]} ; do
     _rep=$(echo ${_p} | cut -d: -f1)
     _pkg=$(echo ${_p} | cut -d: -f2)
-    rsync -avq --include "${_rep}/" --include "${_pkg}*" --exclude '*' kde-os.tk::linux2 temp
+    rsync -avq --include "${_rep}/" --include "${_pkg}*" --exclude '*' kaosx.us::kaos temp
+    rsync -avq --include build/ --include nvidia-3* --exclude '*' kaosx.us::kaos temp
+    rsync -avq --include main/ --include nvidia-utils* --exclude '*' kaosx.us::kaos temp
+    rsync -avq --include apps/ --include partitionmanager-1* --exclude '*' kaosx.us::kaos temp
     _repos=("${_repos[@]}" "${_rep}")
 done
 echo -e "$_g done $_n"
