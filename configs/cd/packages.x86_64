@@ -243,19 +243,21 @@ kde-l10n-pt_BR
 #kde-l10n
 
 # networkmanagement
-kdeplasma-applets-networkmanagement
+##kdeplasma-applets-networkmanagement
+plasma-nm
 modemmanager
 mobile-broadband-provider-info
 networkmanager-dispatcher-ntpd
 kcm-ufw
 
-# tribe + dependencies
+# installer + dependencies
 kdebindings-smokekde
 kdebindings-pykde4
 netctl   
 hwinfo
-tribe       
+#tribe       
 #live-installer
+installer
 
 # extragear
 quassel
@@ -267,6 +269,7 @@ yakuake
 #vlc
 kdemultimedia-dragonplayer
 ##amarok
+clementine
 kde-gtk-config
 ##oxygen-gtk-icons
 oxygen-gtk2
@@ -287,7 +290,7 @@ inxi
 #qt5
 #blender
 ##kdenlive
-##spideroak
+spideroak
 #calibre
 ##grub2-editor
 
@@ -313,7 +316,7 @@ gdb
 ##samba
 
 # office
-##calligra
+calligra
 
 # games
 ##kdegames-kpat

@@ -2,7 +2,7 @@
 # file format: repo:package
 
 main:nvidia-utils*
-build:nvidia-3*
+main:nvidia-3*
 #main:nvidia-304xx-utils*
 #main:nvidia-304xx-3*
 #main:nvidia-173xx-utils*
