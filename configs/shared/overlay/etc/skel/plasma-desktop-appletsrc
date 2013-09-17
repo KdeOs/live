@@ -131,6 +131,12 @@ immutability=1
 plugin=org.kde.showActivityManager
 zvalue=0
 
+[Containments][3][Applets][66]
+geometry=72,3,105,32
+immutability=1
+plugin=pager
+zvalue=4
+
 [Containments][3][Applets][8]
 immutability=1
 plugin=digital-clock

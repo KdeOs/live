@@ -225,10 +225,10 @@ kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
 ##kdenetwork-kget
 ##kdeplasma-addons-runners-characters
-##kdeplasma-addons-runners-converter
+kdeplasma-addons-runners-converter
 ##kdeplasma-addons-runners-datetime
 ##kdeplasma-addons-runners-dictionary ##4.10 option
-##kdeplasma-addons-runners-spellchecker
+kdeplasma-addons-runners-spellchecker
 appmenu-qt
 
 # locales
@@ -238,12 +238,12 @@ kde-l10n-es
 #kde-l10n-fr
 #kde-l10n-it
 kde-l10n-nl
-kde-l10n-pt_BR
+#kde-l10n-pt_BR
 
 #kde-l10n
 
 # networkmanagement
-##kdeplasma-applets-networkmanagement
+kdeplasma-applets-networkmanagement
 plasma-nm
 modemmanager
 mobile-broadband-provider-info
@@ -285,12 +285,13 @@ kdeplasma-applets-appmenu-qml
 octopi
 kio-mtp
 inxi
+kscreen
 
 #xbmc
 #qt5
 #blender
 ##kdenlive
-spideroak
+##spideroak
 #calibre
 ##grub2-editor
 
