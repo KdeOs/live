@@ -72,7 +72,7 @@ if [ -z "$cache_dir" ]; then
     unset cache_conf
 fi
 
-host_mirror='http://kde-os.tk/$repo'
+host_mirror='http://kaosx.us/$repo'
 
 # {{{ functions
 chroot_mount() {
