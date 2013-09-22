@@ -220,7 +220,7 @@ kdegraphics-okular
 kdeutils-ark
 kdeutils-kgpg
 kdeutils-sweeper
-kdeplasma-applets-welcome-plasmoid
+#kdeplasma-applets-welcome-plasmoid
 kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
 ##kdenetwork-kget
@@ -258,6 +258,7 @@ hwinfo
 #tribe       
 #live-installer
 installer
+welcome
 
 # extragear
 quassel
