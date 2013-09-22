@@ -22,12 +22,12 @@ root	ALL=(ALL) ALL
 live    ALL=(ALL) ALL
 live    ALL=NOPASSWD: /bin/cp
 live    ALL=NOPASSWD: /usr/bin/dbus-launch
-live    ALL=NOPASSWD: /usr/bin/tribelauncher
-live    ALL=NOPASSWD: /usr/bin/tribe
+live    ALL=NOPASSWD: /usr/bin/installerlauncher
+live    ALL=NOPASSWD: /usr/bin/installer
 live	ALL=NOPASSWD: /usr/bin/pacman
 live	ALL=NOPASSWD: /usr/bin/partitionmanager
 live    ALL=NOPASSWD: /usr/bin/netcfgGUI
-live    ALL=NOPASSWD: /usr/lib/tribe/tribelauncherworker
+live    ALL=NOPASSWD: /usr/lib/installer/installerlauncherworker
 
 # Uncomment to allow people in group wheel to run all commands
 # %wheel	ALL=(ALL) ALL

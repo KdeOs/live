@@ -18,10 +18,25 @@ wallpaperplugin=image
 wallpaperpluginmode=SingleImage
 zvalue=0
 
-[Containments][1][Applets][46]
-geometry=3,0,508,448
+[Containments][1][Applets][2]
+activity=
+desktop=-1
+formfactor=0
 immutability=1
-plugin=org.kaos.welcome-kaos
+location=0
+plugin=folderview
+screen=-1
+zvalue=0
+
+[Containments][1][Applets][2][Configuration]
+activity=
+desktop=-1
+formfactor=0
+immutability=1
+location=0
+plugin=folderview
+screen=-1
+url=desktop:/
 zvalue=0
 
 [Containments][1][Wallpaper][image]
@@ -97,7 +112,7 @@ plugin=appmenu-qml
 zvalue=4
 
 [Containments][3][Applets][61][Configuration][General]
-favorites=octopi.desktop,qupzilla.desktop,kde4-dragonplayer.desktop,kde4-systemsettings.desktop,kde4-dolphin.desktop,kde4-yakuake.desktop,kde4-kinfocenter.desktop,kde4-ksysguard.desktop,kde4-kate.desktop
+favorites=octopi.desktop,qupzilla.desktop,installer.desktop,kde4-dragonplayer.desktop,kde4-systemsettings.desktop,kde4-dolphin.desktop,kde4-yakuake.desktop,kde4-kinfocenter.desktop,kde4-ksysguard.desktop,kde4-kate.desktop
 numOfColumns=3
 
 [Containments][3][Applets][61][LayoutInformation]
