@@ -2,14 +2,14 @@
 Categories=Qt;System;
 Comment[de]=
 Comment=
-Exec=sudo tribe > /tmp/installation.log 2>&1
+Exec=sudo installer > /tmp/installation.log 2>&1
 GenericName[de]=Installation
 GenericName=Installation
 GenericName[ca]=Instal.lació
 GenericName[es]=Instalación
 GenericName[fr]=Installation
 GenericName[gl]=Instalación
-Icon=tribe
+Icon=installer
 MimeType=
 Name[de]=Installation
 Name=Installation

@@ -18,27 +18,6 @@ wallpaperplugin=image
 wallpaperpluginmode=SingleImage
 zvalue=0
 
-[Containments][1][Applets][2]
-activity=
-desktop=-1
-formfactor=0
-immutability=1
-location=0
-plugin=folderview
-screen=-1
-zvalue=0
-
-[Containments][1][Applets][2][Configuration]
-activity=
-desktop=-1
-formfactor=0
-immutability=1
-location=0
-plugin=folderview
-screen=-1
-url=desktop:/
-zvalue=0
-
 [Containments][1][Wallpaper][image]
 slideTimer=10
 slidepaths=
