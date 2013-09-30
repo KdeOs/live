@@ -211,6 +211,7 @@ kdeadmin-kcron
 kdeadmin-ksystemlog
 kdemultimedia-kmix
 kdesdk-kate
+kdesdk-kompare
 kdegraphics-kgamma
 kdegraphics-gwenview
 kdegraphics-ksnapshot
@@ -218,27 +219,26 @@ kdegraphics-okular
 kdeutils-ark
 kdeutils-kgpg
 kdeutils-sweeper
-#kdeplasma-applets-welcome-plasmoid
 kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
-##kdenetwork-kget
+kdenetwork-kget
 ##kdeplasma-addons-runners-characters
 kdeplasma-addons-runners-converter
 ##kdeplasma-addons-runners-datetime
-##kdeplasma-addons-runners-dictionary ##4.10 option
+kdeplasma-addons-runners-dictionary ##4.10 option
 kdeplasma-addons-runners-spellchecker
 appmenu-qt
 
 # locales
 #kde-l10n-ca
 #kde-l10n-de
-kde-l10n-es
+#kde-l10n-es
 #kde-l10n-fr
 #kde-l10n-it
-kde-l10n-nl
-kde-l10n-pt_BR
+#kde-l10n-nl
+#kde-l10n-pt_BR
 
-#kde-l10n
+kde-l10n
 
 # networkmanagement
 kdeplasma-applets-networkmanagement
@@ -275,7 +275,7 @@ imagewriter
 tomoyo-tools
 python2-gobject3
 spun
-##clamav
+clamav
 init-live
 #kdeplasma-addons-applets-lancelot
 #kdeplasma-applets-homerun 
@@ -284,21 +284,23 @@ octopi
 kio-mtp
 inxi
 kscreen
+kmymoney
+plasma-mediacenter
 
 #xbmc
 #qt5
 #blender
-##kdenlive
-##spideroak
+kdenlive
+spideroak
 #calibre
-##grub2-editor
+grub2-editor
 
 # burn
-##dvd+rw-tools
-##vcdimager
-##transcode
-##emovix
-##k3b
+dvd+rw-tools
+vcdimager
+transcode
+emovix
+k3b
 
 # debugging
 gdb
@@ -318,7 +320,7 @@ samba
 calligra
 
 # games
-##kdegames-kpat
+kdegames-kpat
 
 #IM
 telepathy-idle
