@@ -91,7 +91,7 @@ plugin=appmenu-qml
 zvalue=4
 
 [Containments][3][Applets][61][Configuration][General]
-favorites=octopi.desktop,qupzilla.desktop,installer.desktop,kde4-dragonplayer.desktop,kde4-systemsettings.desktop,kde4-dolphin.desktop,kde4-yakuake.desktop,kde4-kinfocenter.desktop,kde4-ksysguard.desktop,kde4-kate.desktop
+favorites=octopi.desktop,qupzilla.desktop,installer.desktop,kde4-dragonplayer.desktop,kde4-systemsettings.desktop,kde4-dolphin.desktop,kde4-yakuake.desktop,kde4-kinfocenter.desktop,kde4-ksysguard.desktop,kde4-kate.desktop,welcome.desktop
 numOfColumns=3
 
 [Containments][3][Applets][61][LayoutInformation]

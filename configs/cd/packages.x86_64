@@ -125,7 +125,6 @@ xf86-video-intel
 #xf86-video-mga
 #xf86-video-neomagic
 xf86-video-nouveau
-#nouveau-dri ##part of mesa
 #xf86-video-nv
 #xf86-video-openchrome
 #xf86-video-radeonhd
@@ -142,7 +141,7 @@ xf86-video-nouveau
 #xf86-video-tseng
 #xf86-video-v4l
 xf86-video-vesa
-##xf86-video-vmware
+xf86-video-vmware
 #xf86-video-voodoo
 
 # xorg input drivers
@@ -157,7 +156,6 @@ xorg-fonts-cyrillic
 ttf-dejavu
 terminus-font
 ttf-liberation
-#wqy-zenhei
 wqy-microhei
 ttf-indic-otf
 
@@ -238,7 +236,7 @@ kde-l10n-es
 #kde-l10n-fr
 #kde-l10n-it
 kde-l10n-nl
-#kde-l10n-pt_BR
+kde-l10n-pt_BR
 
 #kde-l10n
 
@@ -254,8 +252,7 @@ kcm-ufw
 kdebindings-smokekde
 kdebindings-pykde4
 netctl   
-hwinfo
-#tribe       
+hwinfo      
 #live-installer
 installer
 welcome
@@ -307,15 +304,15 @@ kscreen
 gdb
 
 # printing
-##cups
-##gutenprint 
-##system-config-printer 
-##cups-pdf 
-##kdeadmin-print-manager
-##hplip
-##epsoneplijs
-##epson-inkjet-printer-escpr
-##samba
+cups
+gutenprint 
+system-config-printer 
+cups-pdf 
+kdeadmin-print-manager
+hplip
+epsoneplijs
+epson-inkjet-printer-escpr
+samba
 
 # office
 calligra
@@ -324,10 +321,9 @@ calligra
 ##kdegames-kpat
 
 #IM
-##telepathy-idle
-##telepathy-haze
-##telepathy-gabble
-##telepathy-logger
-##telepathy-rakia
-##telepathy-salut
-##kde-telepathy
+telepathy-idle
+telepathy-haze
+telepathy-gabble
+telepathy-logger
+telepathy-salut
+kde-telepathy
