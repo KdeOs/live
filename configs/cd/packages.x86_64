@@ -1,5 +1,5 @@
 # KaOS-Live Packages file
-# Version: 20130828
+# Version: 20131006
 
 ### These should probably be present
 base  
@@ -22,7 +22,7 @@ hwd
 syslinux
 grub-common
 grub-bios
-grub-efi-x86_64
+grub-efi
 os-prober
 hwdetect
 dmidecode
@@ -179,7 +179,6 @@ pulseaudio
 pulseaudio-alsa
 gstreamer0.10-pulse
 libcanberra-pulse
-#kdeplasma-addons-applets-veromix
 
 # kde (minimal base)
 qt
@@ -222,7 +221,7 @@ kdeutils-sweeper
 kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
 kdenetwork-kget
-##kdeplasma-addons-runners-characters
+kdeplasma-addons-runners-characters
 kdeplasma-addons-runners-converter
 ##kdeplasma-addons-runners-datetime
 kdeplasma-addons-runners-dictionary ##4.10 option
@@ -275,7 +274,7 @@ imagewriter
 tomoyo-tools
 python2-gobject3
 spun
-clamav
+##clamav
 init-live
 #kdeplasma-addons-applets-lancelot
 #kdeplasma-applets-homerun 
