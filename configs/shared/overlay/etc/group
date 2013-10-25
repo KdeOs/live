@@ -44,3 +44,5 @@ nm-openconnect:x:104:
 kdm:x:135:
 uuidd:x:68:
 ntp:x:87
+systemd-journal:x:110:
+usbmux:x:140:

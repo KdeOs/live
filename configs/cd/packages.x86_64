@@ -240,7 +240,7 @@ appmenu-qt
 kde-l10n
 
 # networkmanagement
-kdeplasma-applets-networkmanagement
+##kdeplasma-applets-networkmanagement conflicts with plasma-nm now
 plasma-nm
 modemmanager
 mobile-broadband-provider-info
