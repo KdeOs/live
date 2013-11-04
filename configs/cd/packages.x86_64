@@ -237,10 +237,10 @@ appmenu-qt
 #kde-l10n-nl
 #kde-l10n-pt_BR
 
-kde-l10n
+##kde-l10n
 
 # networkmanagement
-##kdeplasma-applets-networkmanagement conflicts with plasma-nm now
+#kdeplasma-applets-networkmanagement conflicts with plasma-nm now
 plasma-nm
 modemmanager
 mobile-broadband-provider-info
@@ -283,13 +283,13 @@ octopi
 kio-mtp
 inxi
 kscreen
-kmymoney
+##kmymoney
 plasma-mediacenter
 
 #xbmc
 #qt5
 #blender
-kdenlive
+##kdenlive
 spideroak
 #calibre
 grub2-editor
@@ -316,10 +316,10 @@ epson-inkjet-printer-escpr
 samba
 
 # office
-calligra
+##calligra
 
 # games
-kdegames-kpat
+##kdegames-kpat
 
 #IM
 telepathy-idle
