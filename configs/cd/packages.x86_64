@@ -266,7 +266,7 @@ yakuake
 #vlc
 kdemultimedia-dragonplayer
 ##amarok
-clementine
+##clementine
 kde-gtk-config
 ##oxygen-gtk-icons
 oxygen-gtk2
@@ -290,30 +290,30 @@ plasma-mediacenter
 #qt5
 #blender
 ##kdenlive
-spideroak
+##spideroak
 #calibre
-grub2-editor
+##grub2-editor
 
 # burn
-dvd+rw-tools
-vcdimager
-transcode
-emovix
-k3b
+##dvd+rw-tools
+##vcdimager
+##transcode
+##emovix
+##k3b
 
 # debugging
 gdb
 
 # printing
-cups
-gutenprint 
-system-config-printer 
-cups-pdf 
-kdeadmin-print-manager
-hplip
-epsoneplijs
-epson-inkjet-printer-escpr
-samba
+##cups
+##gutenprint 
+##system-config-printer 
+##cups-pdf 
+##kdeadmin-print-manager
+##hplip
+##epsoneplijs
+##epson-inkjet-printer-escpr
+##samba
 
 # office
 ##calligra
