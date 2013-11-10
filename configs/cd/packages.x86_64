@@ -1,5 +1,5 @@
 # KaOS-Live Packages file
-# Version: 20131006
+# Version: 20131109
 
 ### These should probably be present
 base  
@@ -237,7 +237,7 @@ appmenu-qt
 #kde-l10n-nl
 #kde-l10n-pt_BR
 
-##kde-l10n
+kde-l10n
 
 # networkmanagement
 #kdeplasma-applets-networkmanagement conflicts with plasma-nm now
@@ -266,7 +266,7 @@ yakuake
 #vlc
 kdemultimedia-dragonplayer
 ##amarok
-##clementine
+clementine
 kde-gtk-config
 ##oxygen-gtk-icons
 oxygen-gtk2
@@ -283,43 +283,43 @@ octopi
 kio-mtp
 inxi
 kscreen
-##kmymoney
+kmymoney
 plasma-mediacenter
 
 #xbmc
 #qt5
 #blender
-##kdenlive
-##spideroak
+kdenlive
+spideroak
 #calibre
-##grub2-editor
+grub2-editor
 
 # burn
-##dvd+rw-tools
-##vcdimager
-##transcode
-##emovix
-##k3b
+dvd+rw-tools
+vcdimager
+transcode
+emovix
+k3b
 
 # debugging
 gdb
 
 # printing
-##cups
-##gutenprint 
-##system-config-printer 
-##cups-pdf 
-##kdeadmin-print-manager
-##hplip
-##epsoneplijs
-##epson-inkjet-printer-escpr
-##samba
+cups
+gutenprint 
+system-config-printer 
+cups-pdf 
+kdeadmin-print-manager
+hplip
+epsoneplijs
+epson-inkjet-printer-escpr
+samba
 
 # office
-##calligra
+calligra
 
 # games
-##kdegames-kpat
+kdegames-kpat
 
 #IM
 telepathy-idle
