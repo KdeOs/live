@@ -202,7 +202,8 @@ grub-themes-monochrome
 python2-xlib
 ##python2-v4l2capture
 python2-imaging
-platinum-colors
+#platinum-colors
+kotonaru-colors
 
 # kde (everything else)
 kdeadmin-kuser
