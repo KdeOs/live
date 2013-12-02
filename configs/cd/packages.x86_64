@@ -1,5 +1,5 @@
 # KaOS-Live Packages file
-# Version: 20131109
+# Version: 20131201
 
 ### These should probably be present
 base  
@@ -52,7 +52,7 @@ libstdc++5
 # generally useful tools that dont require X
 bash-completion
 openssh
-##nmap
+nmap
 lsof
 vim
 sudo
@@ -221,7 +221,7 @@ kdeutils-kgpg
 kdeutils-sweeper
 kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
-kdenetwork-kget
+##kdenetwork-kget
 kdeplasma-addons-runners-characters
 kdeplasma-addons-runners-converter
 ##kdeplasma-addons-runners-datetime
@@ -238,7 +238,7 @@ appmenu-qt
 #kde-l10n-nl
 #kde-l10n-pt_BR
 
-kde-l10n
+##kde-l10n
 
 # networkmanagement
 #kdeplasma-applets-networkmanagement conflicts with plasma-nm now
@@ -267,7 +267,7 @@ yakuake
 #vlc
 kdemultimedia-dragonplayer
 ##amarok
-clementine
+##clementine
 kde-gtk-config
 ##oxygen-gtk-icons
 oxygen-gtk2
@@ -284,23 +284,23 @@ octopi
 kio-mtp
 inxi
 kscreen
-kmymoney
+##kmymoney
 plasma-mediacenter
 
 #xbmc
 #qt5
 #blender
-kdenlive
-spideroak
+##kdenlive
+##spideroak
 #calibre
-grub2-editor
+##grub2-editor
 
 # burn
-dvd+rw-tools
-vcdimager
-transcode
-emovix
-k3b
+##dvd+rw-tools
+##vcdimager
+##transcode
+##emovix
+##k3b
 
 # debugging
 gdb
@@ -317,15 +317,16 @@ epson-inkjet-printer-escpr
 samba
 
 # office
-calligra
+##calligra
+##calligra-l10n
 
 # games
-kdegames-kpat
+##kdegames-kpat
 
 #IM
-telepathy-idle
-telepathy-haze
-telepathy-gabble
-telepathy-logger
-telepathy-salut
-kde-telepathy
+##telepathy-idle
+##telepathy-haze
+##telepathy-gabble
+##telepathy-logger
+##telepathy-salut
+##kde-telepathy
