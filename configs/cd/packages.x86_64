@@ -238,7 +238,7 @@ appmenu-qt
 #kde-l10n-nl
 #kde-l10n-pt_BR
 
-##kde-l10n
+kde-l10n
 
 # networkmanagement
 #kdeplasma-applets-networkmanagement conflicts with plasma-nm now
@@ -286,6 +286,7 @@ inxi
 kscreen
 ##kmymoney
 plasma-mediacenter
+kcmsystemd
 
 #xbmc
 #qt5
@@ -317,8 +318,14 @@ epson-inkjet-printer-escpr
 samba
 
 # office
-##calligra
-##calligra-l10n
+calligra
+calligra-l10n-ca
+calligra-l10n-de
+calligra-l10n-es
+calligra-l10n-fr
+calligra-l10n-it
+calligra-l10n-nl
+calligra-l10n-pt_BR
 
 # games
 ##kdegames-kpat
