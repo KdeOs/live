@@ -1,5 +1,5 @@
 # KaOS-Live Packages file
-# Version: 20131201
+# Version: 20131208
 
 ### These should probably be present
 base  
@@ -287,6 +287,7 @@ kscreen
 ##kmymoney
 plasma-mediacenter
 kcmsystemd
+xdg-user-dirs
 
 #xbmc
 #qt5
@@ -319,13 +320,7 @@ samba
 
 # office
 calligra
-calligra-l10n-ca
-calligra-l10n-de
-calligra-l10n-es
-calligra-l10n-fr
-calligra-l10n-it
-calligra-l10n-nl
-calligra-l10n-pt_BR
+calligra-l10n
 
 # games
 ##kdegames-kpat
