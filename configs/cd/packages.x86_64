@@ -1,5 +1,5 @@
 # KaOS-Live Packages file
-# Version: 20131208
+# Version: 20131214
 
 ### These should probably be present
 base  
@@ -221,7 +221,7 @@ kdeutils-kgpg
 kdeutils-sweeper
 kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
-##kdenetwork-kget
+kdenetwork-kget
 kdeplasma-addons-runners-characters
 kdeplasma-addons-runners-converter
 ##kdeplasma-addons-runners-datetime
@@ -267,7 +267,7 @@ yakuake
 #vlc
 kdemultimedia-dragonplayer
 ##amarok
-##clementine
+clementine
 kde-gtk-config
 ##oxygen-gtk-icons
 oxygen-gtk2
@@ -292,17 +292,18 @@ xdg-user-dirs
 #xbmc
 #qt5
 #blender
-##kdenlive
-##spideroak
+kdenlive
+spideroak
 #calibre
-##grub2-editor
+grub2-editor
+hotot
 
 # burn
-##dvd+rw-tools
-##vcdimager
-##transcode
-##emovix
-##k3b
+dvd+rw-tools
+vcdimager
+transcode
+emovix
+k3b
 
 # debugging
 gdb
@@ -323,12 +324,12 @@ calligra
 calligra-l10n
 
 # games
-##kdegames-kpat
+kdegames-kpat
 
 #IM
-##telepathy-idle
-##telepathy-haze
-##telepathy-gabble
-##telepathy-logger
-##telepathy-salut
-##kde-telepathy
+telepathy-idle
+telepathy-haze
+telepathy-gabble
+telepathy-logger
+telepathy-salut
+kde-telepathy
