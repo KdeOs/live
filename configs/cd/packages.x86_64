@@ -318,6 +318,7 @@ hplip
 epsoneplijs
 epson-inkjet-printer-escpr
 samba
+a2ps
 
 # office
 calligra
