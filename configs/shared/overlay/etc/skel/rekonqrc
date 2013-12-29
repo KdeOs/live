@@ -7,7 +7,7 @@ ToolButtonStyle=IconOnly
 
 [NewTabPage]
 previewNames=KaOS,Forums,YouTube-html5
-previewUrls=http://www.kaosx.us,http://www.kaosx.us/phpBB3,http://www.youtube.com/html5
+previewUrls=http://kaosx.us,http://kaosx.us/phpBB3,http://www.youtube.com/html5
 
 [Webkit]
 pluginsEnabled=1
