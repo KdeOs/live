@@ -13,7 +13,7 @@
 #main:catalyst-1*
 #main:catalyst-utils-1*
 
-apps:partitionmanager-1*
+#apps:partitionmanager-1*
 #build:kapudan-2*
 
 #apps:spun-0.*

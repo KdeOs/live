@@ -129,8 +129,8 @@ zvalue=6
 alignToBottom=false
 
 [Containments][3][Applets][72][PopupApplet]
-DialogHeight=535
-DialogWidth=216
+DialogHeight=422
+DialogWidth=252
 
 [Containments][3][Applets][72][Shortcuts]
 global=Alt+F1

@@ -48,9 +48,9 @@ for _p in ${_overlaypkgs[@]} ; do
     _rep=$(echo ${_p} | cut -d: -f1)
     _pkg=$(echo ${_p} | cut -d: -f2)
     #rsync -avq --include "${_rep}/" --include "${_pkg}*" --exclude '*' kaosx.us::kaos ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/kdeos/pkgs/
-    rsync -avq --include main/ --include nvidia-3* --exclude '*' kaosx.us::kaos ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/kdeos/pkgs/
-    rsync -avq --include main/ --include nvidia-utils* --exclude '*' kaosx.us::kaos ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/kdeos/pkgs/
-    rsync -avq --include apps/ --include partitionmanager-1* --exclude '*' kaosx.us::kaos ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/kdeos/pkgs/
+    #rsync -avq --include main/ --include nvidia-3* --exclude '*' kaosx.us::kaos ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/kdeos/pkgs/
+    #rsync -avq --include main/ --include nvidia-utils* --exclude '*' kaosx.us::kaos ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/kdeos/pkgs/
+    #rsync -avq --include apps/ --include partitionmanager-1* --exclude '*' kaosx.us::kaos ${CURRENTDIR}/${WORKDIR}/overlay-pkgs/opt/kdeos/pkgs/
     #_repos=("${_repos[@]}" "${_rep}")
 done
 echo -e "$_g done $_n"
