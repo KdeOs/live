@@ -238,7 +238,7 @@ appmenu-qt
 #kde-l10n-nl
 #kde-l10n-pt_BR
 
-##kde-l10n
+kde-l10n
 
 # networkmanagement
 #kdeplasma-applets-networkmanagement conflicts with plasma-nm now
@@ -267,7 +267,7 @@ yakuake
 #vlc
 kdemultimedia-dragonplayer
 ##amarok
-##clementine
+clementine
 kde-gtk-config
 ##oxygen-gtk-icons
 oxygen-gtk2
@@ -292,45 +292,45 @@ xdg-user-dirs
 #xbmc
 #qt5
 #blender
-##kdenlive
-##spideroak
+kdenlive
+spideroak
 #calibre
-##grub2-editor
+grub2-editor
 ##hotot
 
 # burn
-##dvd+rw-tools
-##vcdimager
-##transcode
-##emovix
-##k3b
+dvd+rw-tools
+vcdimager
+transcode
+emovix
+k3b
 
 # debugging
 gdb
 
 # printing
-##cups
-##gutenprint 
-##system-config-printer 
-##cups-pdf 
-##kdeadmin-print-manager
-##hplip
-##epsoneplijs
-##epson-inkjet-printer-escpr
-##samba
-##a2ps
+cups
+gutenprint 
+system-config-printer 
+cups-pdf 
+kdeadmin-print-manager
+hplip
+epsoneplijs
+epson-inkjet-printer-escpr
+samba
+a2ps
 
 # office
-##calligra
-##calligra-l10n
+calligra
+calligra-l10n
 
 # games
-##kdegames-kpat
+kdegames-kpat
 
 #IM
-##telepathy-idle
-##telepathy-haze
-##telepathy-gabble
-##telepathy-logger
-##telepathy-salut
-##kde-telepathy
+telepathy-idle
+telepathy-haze
+telepathy-gabble
+telepathy-logger
+telepathy-salut
+kde-telepathy
