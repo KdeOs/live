@@ -31,6 +31,7 @@ virtuoso
 xdelta3
 avahi
 ntfs-3g
+btrfs-progs
 dosfstools
 gptfdisk
 testdisk
