@@ -229,6 +229,7 @@ kdeplasma-addons-runners-converter
 kdeplasma-addons-runners-dictionary ##4.10 option
 kdeplasma-addons-runners-spellchecker
 appmenu-qt
+synaptiks
 
 # locales
 #kde-l10n-ca
