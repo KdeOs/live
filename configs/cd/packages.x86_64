@@ -1,5 +1,5 @@
 # KaOS-Live Packages file
-# Version: 20131214
+# Version: 20140213
 
 ### These should probably be present
 base  
@@ -18,7 +18,7 @@ lsb-release
 # basic needs
 nbd
 kdeos-hardware-detection
-hwd
+#hwd
 syslinux
 grub-common
 grub-bios
@@ -194,17 +194,18 @@ kde-workspace
 oxygen-icons
 
 # themes 
-kde-kdm-themes-grey
-kde-ksplash-themes-grey
-kde-plasma-themes-Kotonaru
-wallpapers-grey
-kde-wallpapers
+kde-kdm-themes-midna
+kde-ksplash-themes-midna
+kde-plasma-themes-midna
+wallpapers-midna
+#kde-wallpapers
+KaOS_wallpapers
 grub-themes-monochrome
 python2-xlib
 ##python2-v4l2capture
 python2-imaging
 #platinum-colors
-kotonaru-colors
+midna-colors
 
 # kde (everything else)
 kdeadmin-kuser
@@ -229,7 +230,8 @@ kdeplasma-addons-runners-converter
 kdeplasma-addons-runners-dictionary ##4.10 option
 kdeplasma-addons-runners-spellchecker
 appmenu-qt
-synaptiks
+#synaptiks
+kde-touchpad-config
 
 # locales
 #kde-l10n-ca
