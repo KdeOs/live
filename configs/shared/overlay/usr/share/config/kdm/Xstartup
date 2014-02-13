@@ -14,4 +14,4 @@
 
 # NOTE: The session is aborted if the last command returns non-zero.
 
-# exec /usr/share/apps/kdm/themes/grey/background.sh
+# exec /usr/share/apps/kdm/themes/midna/background.sh
