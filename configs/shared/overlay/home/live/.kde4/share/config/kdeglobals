@@ -93,6 +93,9 @@ ColorScheme=Midna
 Name=Midna
 shadeSortColumn=true
 
+[Icons]
+Theme=Compass-KDE
+
 [KDE]
 contrast=7
 
