@@ -94,7 +94,7 @@ Name=Midna
 shadeSortColumn=true
 
 [Icons]
-Theme=Compass-KDE
+Theme=flattr-icons-kde-master
 
 [KDE]
 contrast=7
