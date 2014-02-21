@@ -206,7 +206,7 @@ python2-xlib
 python2-imaging
 #platinum-colors
 midna-colors
-compass-icon-theme
+flattr-icons
 
 # kde (everything else)
 kdeadmin-kuser
@@ -278,7 +278,7 @@ kde-gtk-config
 oxygen-gtk2
 imagewriter
 tomoyo-tools
-python2-gobject3
+##python2-gobject3 no longer needed systemd 209
 spun
 ##clamav
 init-live
