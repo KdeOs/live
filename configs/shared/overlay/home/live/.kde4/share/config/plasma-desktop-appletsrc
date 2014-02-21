@@ -81,8 +81,8 @@ isGroup=true
 sourceAppletId=6
 sourceAppletPluginName=systemtray
 
-[Containments][3][Applets][6][LayoutInformation]
-Order=2
+[Containments][3][Applets][6][Configuration][Launchers]
+Items=file:///usr/share/applications/welcome.desktop?wmClass=Welcome
 
 [Containments][3][Applets][62]
 geometry=156,3,32,32
