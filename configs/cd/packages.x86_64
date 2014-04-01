@@ -27,7 +27,7 @@ os-prober
 hwdetect
 dmidecode
 bc
-virtuoso
+##virtuoso
 xdelta3
 avahi
 ntfs-3g
@@ -200,7 +200,7 @@ kde-plasma-themes-midna
 wallpapers-midna
 #kde-wallpapers
 KaOS_wallpapers
-grub-themes-monochrome
+grub-theme-midna
 python2-xlib
 ##python2-v4l2capture
 python2-imaging
@@ -224,7 +224,7 @@ kdeutils-kgpg
 kdeutils-sweeper
 kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
-kdenetwork-kget
+#kdenetwork-kget
 kdeplasma-addons-runners-characters
 kdeplasma-addons-runners-converter
 ###kdeplasma-addons-runners-datetime
@@ -244,7 +244,7 @@ kdeconnect-kde
 #kde-l10n-nl
 #kde-l10n-pt_BR
 
-kde-l10n
+##kde-l10n
 
 # networkmanagement
 #kdeplasma-applets-networkmanagement conflicts with plasma-nm now
@@ -264,16 +264,17 @@ installer
 welcome
 
 # extragear
-quassel
-#rekonq
+#quassel
+##rekonq
 qupzilla
 bluedevil
 yakuake
-#qmmp
-#vlc
-kdemultimedia-dragonplayer
+##qmmp
+##vlc
+##kdemultimedia-dragonplayer
+smplayer
 ##amarok
-clementine
+#clementine
 kde-gtk-config
 ##oxygen-gtk-icons
 oxygen-gtk2
@@ -291,47 +292,47 @@ kio-mtp
 inxi
 kscreen
 ##kmymoney
-plasma-mediacenter
+##plasma-mediacenter
 kcmsystemd
 xdg-user-dirs
 
 #xbmc
 #qt5
 #blender
-kdenlive
-spideroak
+#kdenlive
+#spideroak
 #calibre
-grub2-editor
+#grub2-editor
 ##hotot
 
 # burn
-dvd+rw-tools
-vcdimager
-transcode
-emovix
-k3b
+#dvd+rw-tools
+#vcdimager
+#transcode
+#emovix
+#k3b
 
 # debugging
 gdb
 
 # printing
-cups
-gutenprint 
-system-config-printer 
-cups-pdf 
-kdeadmin-print-manager
-hplip
-epsoneplijs
-epson-inkjet-printer-escpr
-samba
-a2ps
+#cups
+#gutenprint 
+#system-config-printer 
+#cups-pdf 
+#kdeadmin-print-manager
+#hplip
+#epsoneplijs
+#epson-inkjet-printer-escpr
+#samba
+#a2ps
 
 # office
-calligra
-calligra-l10n
+#calligra
+#calligra-l10n
 
 # games
-kdegames-kpat
+#kdegames-kpat
 
 #IM
 telepathy-idle
