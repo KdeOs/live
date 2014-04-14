@@ -336,9 +336,9 @@ gdb
 #kdegames-kpat
 
 #IM
-telepathy-idle
-telepathy-haze
-telepathy-gabble
-telepathy-logger
-telepathy-salut
-kde-telepathy
+#telepathy-idle
+#telepathy-haze
+#telepathy-gabble
+#telepathy-logger
+#telepathy-salut
+#kde-telepathy
