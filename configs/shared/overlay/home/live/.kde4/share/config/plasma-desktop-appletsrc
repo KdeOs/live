@@ -42,6 +42,9 @@ immutability=1
 plugin=icontasks
 zvalue=0
 
+[Containments][3][Applets][54][Configuration]
+launcherIcons=true
+
 [Containments][3][Applets][54][LayoutInformation]
 Order=1
 
