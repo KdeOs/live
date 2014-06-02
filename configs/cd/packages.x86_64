@@ -190,6 +190,7 @@ systemsettings
 oxygen-fonts
 breeze
 sddm
+kate
 
 # themes 
 #kde-kdm-themes-midna
@@ -255,6 +256,7 @@ smtube
 ##amarok
 #clementine
 #kde-gtk-config
+kf5-kde-gtk-config
 ##oxygen-gtk-icons
 oxygen-gtk2
 imagewriter
