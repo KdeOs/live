@@ -242,6 +242,8 @@ rsync
 hdparm
 hwinfo 
 iso-codes
+keyboardctl
+ttf-indic-otf
 thus
 welcome
 
@@ -249,7 +251,7 @@ welcome
 kf5-quassel
 kf5-rekonq
 kf5-qupzilla
-#bluedevil
+kf5-bluedevil
 kf5-yakuake
 ##qmmp
 ##vlc
@@ -279,6 +281,8 @@ inxi
 xdg-user-dirs
 notepad
 kf5-skanlite
+okteta
+kf5-kdevelop
 
 #xbmc
 #blender
