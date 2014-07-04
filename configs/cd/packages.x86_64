@@ -1,5 +1,5 @@
 # KaOS-Live Packages file
-# Version: 20140613
+# Version: 20140704
 
 ### These should probably be present
 base  
@@ -199,7 +199,7 @@ konsole
 #kde-ksplash-themes-midna
 #kde-plasma-themes-midna
 wallpapers-midna
-#kde-wallpapers
+plasma-workspace-wallpapers
 KaOS_wallpapers
 grub-theme-midna
 python2-xlib
@@ -283,6 +283,7 @@ notepad
 kf5-skanlite
 okteta
 kf5-kdevelop
+kf5-kdeconnect-kde
 
 #xbmc
 #blender
