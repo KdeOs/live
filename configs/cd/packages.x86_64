@@ -1,5 +1,5 @@
 # KaOS-Live Packages file
-# Version: 20140704
+# Version: 20140720
 
 ### These should probably be present
 base  
@@ -34,7 +34,6 @@ ntfs-3g
 btrfs-progs
 dosfstools
 gptfdisk
-jfsutils
 testdisk
 
 # drivers & system utilities
@@ -182,24 +181,24 @@ pulseaudio-alsa
 gstreamer0.10-pulse
 libcanberra-pulse
 
-# kf5 (minimal base)
-kf5
-plasma-workspace
-plasma-desktop
-kf5-kde-baseapps
-systemsettings
-oxygen-fonts
-breeze
-sddm
-kate
-konsole
+# kde (minimal base)
+qt
+kde-common
+kdelibs
+kdepimlibs
+kde-runtime
+kde-baseapps
+kde-baseapps-dolphin
+kde-baseapps-konsole
+kde-workspace
+oxygen-icons
 
 # themes 
-#kde-kdm-themes-midna
-#kde-ksplash-themes-midna
-#kde-plasma-themes-midna
+kde-kdm-themes-midna
+kde-ksplash-themes-midna
+kde-plasma-themes-midna
 wallpapers-midna
-plasma-workspace-wallpapers
+#kde-wallpapers
 KaOS_wallpapers
 grub-theme-midna
 python2-xlib
@@ -210,12 +209,32 @@ midna-colors
 flattr-icons
 
 # kde (everything else)
-kinfocenter
-kmenuedit
-ksysguard
-kwalletmanager
-milou
-kf5-partitionmanager
+kdeadmin-kuser
+kdeadmin-kcron
+kdeadmin-ksystemlog
+kdemultimedia-kmix
+kdesdk-kate
+kdesdk-kompare
+kdegraphics-kgamma
+kdegraphics-gwenview
+kdegraphics-ksnapshot
+kdegraphics-okular
+kdegraphics-thumbnailers
+kdeutils-ark
+kdeutils-kgpg
+kdeutils-sweeper
+kdeplasma-addons-applets-icontasks
+kdenetwork-kppp
+#kdenetwork-kget
+kdeplasma-addons-runners-characters
+kdeplasma-addons-runners-converter
+###kdeplasma-addons-runners-datetime
+kdeplasma-addons-runners-dictionary ##4.10 option
+kdeplasma-addons-runners-spellchecker
+appmenu-qt
+#synaptiks
+kde-touchpad-config
+kdeconnect-kde
 
 # locales
 #kde-l10n-ca
@@ -226,21 +245,24 @@ kf5-partitionmanager
 #kde-l10n-nl
 #kde-l10n-pt_BR
 
-#kde-l10n
+kde-l10n
 
 # networkmanagement
 #kdeplasma-applets-networkmanagement conflicts with plasma-nm now
-kf5-plasma-nm
+plasma-nm
 modemmanager
 mobile-broadband-provider-info
 networkmanager-dispatcher-ntpd
-#kcm-ufw
+kcm-ufw
 
 # installer + dependencies
-netctl
+##kdebindings-smokekde
+##kdebindings-pykde4
+netctl   
+hwinfo      
+##installer
 rsync  
 hdparm
-hwinfo 
 iso-codes
 keyboardctl
 ttf-indic-otf
@@ -248,19 +270,20 @@ thus
 welcome
 
 # extragear
-kf5-quassel
-kf5-rekonq
-kf5-qupzilla
-kf5-bluedevil
-kf5-yakuake
+quassel
+##rekonq
+qupzilla
+bluedevil
+yakuake
 ##qmmp
 ##vlc
 ##kdemultimedia-dragonplayer
 smplayer
 smtube
-##amarok
-#clementine
-kf5-kde-gtk-config
+#amarok
+##clementine
+kde-gtk-config
+##oxygen-gtk-icons
 oxygen-gtk2
 imagewriter
 tomoyo-tools
@@ -269,63 +292,61 @@ spun
 ##clamav
 init-live
 #kdeplasma-addons-applets-lancelot
-#homerun 
+homerun 
 #kdeplasma-applets-appmenu-qml
+kcp
+#base-devel
 octopi
-#kio-mtp
+kio-mtp
 inxi
-#kscreen
+kscreen
 ##kmymoney
 ##plasma-mediacenter
-#kcmsystemd
+kcmsystemd
 xdg-user-dirs
-notepad
-kf5-skanlite
-okteta
-kf5-kdevelop
-kf5-kdeconnect-kde
 
 #xbmc
+#qt5
 #blender
-#kdenlive
-#spideroak
+##kdenlive
+##spideroak
 #calibre
-#grub2-editor
-##hotot
+##grub2-editor
+####hotot
 
 # burn
-#dvd+rw-tools
-#vcdimager
-#transcode
-#emovix
-#k3b
+##dvd+rw-tools
+##vcdimager
+##transcode
+##emovix
+##k3b
 
 # debugging
 gdb
 
 # printing
-#cups
-#gutenprint 
-#system-config-printer 
-#cups-pdf 
-#kdeadmin-print-manager
-#hplip
-#epsoneplijs
-#epson-inkjet-printer-escpr
-#samba
-#a2ps
+##cups
+##gutenprint 
+##system-config-printer 
+##cups-pdf 
+##kdeadmin-print-manager
+##hplip
+##epsoneplijs
+##epson-inkjet-printer-escpr
+##samba
+##a2ps
 
 # office
-#calligra
-#calligra-l10n
+calligra
+calligra-l10n
 
 # games
-#kdegames-kpat
+##kdegames-kpat
 
 #IM
-#telepathy-idle
-#telepathy-haze
-#telepathy-gabble
-#telepathy-logger
-#telepathy-salut
-#kde-telepathy
+##telepathy-idle
+##telepathy-haze
+##telepathy-gabble
+##telepathy-logger
+##telepathy-salut
+##kde-telepathy
