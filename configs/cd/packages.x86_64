@@ -245,7 +245,7 @@ kdeconnect-kde
 #kde-l10n-nl
 #kde-l10n-pt_BR
 
-kde-l10n
+##kde-l10n
 
 # networkmanagement
 #kdeplasma-applets-networkmanagement conflicts with plasma-nm now
@@ -288,7 +288,7 @@ oxygen-gtk2
 imagewriter
 tomoyo-tools
 ##python2-gobject3 no longer needed systemd 209
-spun
+##spun
 ##clamav
 init-live
 #kdeplasma-addons-applets-lancelot
