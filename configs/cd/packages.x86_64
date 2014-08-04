@@ -232,9 +232,9 @@ kdeplasma-addons-runners-converter
 kdeplasma-addons-runners-dictionary ##4.10 option
 kdeplasma-addons-runners-spellchecker
 appmenu-qt
-#synaptiks
 kde-touchpad-config
 kdeconnect-kde
+partitionmanager
 
 # locales
 #kde-l10n-ca
@@ -266,11 +266,12 @@ hdparm
 iso-codes
 keyboardctl
 ttf-indic-otf
+dconf
 thus
 welcome
 
 # extragear
-quassel
+#quassel
 ##rekonq
 qupzilla
 bluedevil
@@ -302,7 +303,7 @@ inxi
 kscreen
 ##kmymoney
 ##plasma-mediacenter
-kcmsystemd
+#kcmsystemd
 xdg-user-dirs
 
 #xbmc
