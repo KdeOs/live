@@ -1,5 +1,5 @@
 # KaOS-Live Packages file
-# Version: 20140720
+# Version: 20140815
 
 ### These should probably be present
 base  
@@ -338,8 +338,8 @@ gdb
 ##a2ps
 
 # office
-calligra
-calligra-l10n
+##calligra
+##calligra-l10n
 
 # games
 ##kdegames-kpat

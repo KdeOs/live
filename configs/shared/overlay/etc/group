@@ -51,3 +51,4 @@ systemd-timesync:x:192:
 sddm:x:136:
 systemd-resolve:x:195:
 systemd-network:x:193:
+systemd-bus-proxy:x:194:
