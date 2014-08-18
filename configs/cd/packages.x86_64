@@ -245,7 +245,7 @@ partitionmanager
 #kde-l10n-nl
 #kde-l10n-pt_BR
 
-##kde-l10n
+kde-l10n
 
 # networkmanagement
 #kdeplasma-applets-networkmanagement conflicts with plasma-nm now
@@ -271,7 +271,7 @@ thus
 welcome
 
 # extragear
-#quassel
+quassel
 ##rekonq
 qupzilla
 bluedevil
@@ -281,7 +281,7 @@ yakuake
 ##kdemultimedia-dragonplayer
 smplayer
 smtube
-#amarok
+amarok
 ##clementine
 kde-gtk-config
 ##oxygen-gtk-icons
@@ -296,58 +296,59 @@ init-live
 homerun 
 #kdeplasma-applets-appmenu-qml
 kcp
-#base-devel
+base-devel
 octopi
 kio-mtp
 inxi
 kscreen
 ##kmymoney
 ##plasma-mediacenter
-#kcmsystemd
+kcmsystemd
 xdg-user-dirs
 
 #xbmc
 #qt5
 #blender
-##kdenlive
+kdenlive
 ##spideroak
 #calibre
 ##grub2-editor
 ####hotot
+dropbox
 
 # burn
-##dvd+rw-tools
-##vcdimager
-##transcode
-##emovix
-##k3b
+dvd+rw-tools
+vcdimager
+transcode
+emovix
+k3b
 
 # debugging
 gdb
 
 # printing
-##cups
-##gutenprint 
-##system-config-printer 
-##cups-pdf 
-##kdeadmin-print-manager
-##hplip
-##epsoneplijs
-##epson-inkjet-printer-escpr
-##samba
-##a2ps
+cups
+gutenprint 
+system-config-printer 
+cups-pdf 
+kdeadmin-print-manager
+hplip
+epsoneplijs
+epson-inkjet-printer-escpr
+samba
+a2ps
 
 # office
-##calligra
-##calligra-l10n
+calligra
+calligra-l10n
 
 # games
-##kdegames-kpat
+kdegames-kpat
 
 #IM
-##telepathy-idle
-##telepathy-haze
-##telepathy-gabble
-##telepathy-logger
-##telepathy-salut
-##kde-telepathy
+telepathy-idle
+telepathy-haze
+telepathy-gabble
+telepathy-logger
+telepathy-salut
+kde-telepathy
