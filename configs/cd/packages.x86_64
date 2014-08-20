@@ -213,6 +213,7 @@ kdeadmin-kuser
 kdeadmin-kcron
 kdeadmin-ksystemlog
 kdemultimedia-kmix
+kdemultimedia-thumbnailers
 kdesdk-kate
 kdesdk-kompare
 kdegraphics-kgamma
@@ -225,7 +226,7 @@ kdeutils-kgpg
 kdeutils-sweeper
 kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
-#kdenetwork-kget
+kdenetwork-kget
 kdeplasma-addons-runners-characters
 kdeplasma-addons-runners-converter
 ###kdeplasma-addons-runners-datetime
@@ -309,7 +310,7 @@ xdg-user-dirs
 #xbmc
 #qt5
 #blender
-kdenlive
+##kdenlive
 ##spideroak
 #calibre
 ##grub2-editor
