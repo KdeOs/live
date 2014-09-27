@@ -68,7 +68,18 @@ make_boot() {
         #cp ${work_dir}/root-image/boot/memtest86+/memtest.bin ${work_dir}/iso/${install_dir}/boot/${arch}/memtest
 	cp ${work_dir}/root-image/boot/vmlinuz* ${work_dir}/iso/${install_dir}/boot/${arch}/kdeosiso
 	cp -Lr boot-files/isolinux ${work_dir}/iso/
-	cp ${work_dir}/root-image/usr/lib/syslinux/isolinux.bin ${work_dir}/iso/isolinux/
+	cp ${work_dir}/root-image/usr/lib/syslinux/bios/isolinux.bin ${work_dir}/iso/isolinux/
+        cp ${work_dir}/root-image/usr/lib/syslinux/bios/isohdpfx.bin ${work_dir}/iso/isolinux/
+        cp ${work_dir}/root-image/usr/lib/syslinux/bios/ldlinux.c32 ${work_dir}/iso/isolinux/
+        cp ${work_dir}/root-image/usr/lib/syslinux/bios/gfxboot.c32 ${work_dir}/iso/isolinux/
+        cp ${work_dir}/root-image/usr/lib/syslinux/bios/whichsys.c32 ${work_dir}/iso/isolinux/
+        cp ${work_dir}/root-image/usr/lib/syslinux/bios/mboot.c32 ${work_dir}/iso/isolinux/
+        cp ${work_dir}/root-image/usr/lib/syslinux/bios/hdt.c32 ${work_dir}/iso/isolinux/
+        cp ${work_dir}/root-image/usr/lib/syslinux/bios/chain.c32 ${work_dir}/iso/isolinux/
+        cp ${work_dir}/root-image/usr/lib/syslinux/bios/libcom32.c32 ${work_dir}/iso/isolinux/
+        cp ${work_dir}/root-image/usr/lib/syslinux/bios/libmenu.c32 ${work_dir}/iso/isolinux/
+        cp ${work_dir}/root-image/usr/lib/syslinux/bios/libutil.c32 ${work_dir}/iso/isolinux/
+        cp ${work_dir}/root-image/usr/lib/syslinux/bios/libgpl.c32 ${work_dir}/iso/isolinux/
         mkdir -p ${work_dir}/boot-image
         if [ "`mount -l | grep ${work_dir}/boot-image`" != "" ]; then
            umount -f ${work_dir}/boot-image/proc ${work_dir}/boot-image/sys ${work_dir}/boot-image/dev ${work_dir}/boot-image
@@ -89,6 +100,83 @@ make_boot() {
 	echo -e "$_g >$_W done $_n"
     fi
 }
+
+# Prepare /EFI
+make_efi() {
+    if [[ ! -e ${work_dir}/build.${FUNCNAME} ]]; then
+        echo -e -n "$_r >$_W Prepare ${install_dir}/boot/EFI \n $_n"
+        mkdir -p ${work_dir}/iso/EFI/boot
+        cp ${work_dir}/root-image/usr/lib/prebootloader/PreLoader.efi ${work_dir}/iso/EFI/boot/bootx64.efi
+        cp ${work_dir}/root-image/usr/lib/prebootloader/HashTool.efi ${work_dir}/iso/EFI/boot/
+
+        cp ${work_dir}/root-image/usr/lib/gummiboot/gummibootx64.efi ${work_dir}/iso/EFI/boot/loader.efi
+
+        mkdir -p ${work_dir}/iso/loader/entries
+        cp boot-files/loader/loader.conf ${work_dir}/iso/loader/
+        cp boot-files/loader/entries/uefi-shell-v2-x86_64.conf ${work_dir}/iso/loader/entries/
+        cp boot-files/loader/entries/uefi-shell-v1-x86_64.conf ${work_dir}/iso/loader/entries/
+
+        sed "s|%KDEOSISO_LABEL%|${iso_label}|g;
+             s|%INSTALL_DIR%|${install_dir}|g" \
+            boot-files/loader/entries/kaos-usb.conf > ${work_dir}/iso/loader/entries/kaos.conf
+
+        sed "s|%KDEOSISO_LABEL%|${iso_label}|g;
+             s|%INSTALL_DIR%|${install_dir}|g" \
+            boot-files/loader/entries/kaos-nonfree-usb.conf > ${work_dir}/iso/loader/entries/kaos-nonfree.conf
+
+        # EFI Shell 2.0 for UEFI 2.3+ ( http://sourceforge.net/apps/mediawiki/tianocore/index.php?title=UEFI_Shell )
+        curl -o ${work_dir}/iso/EFI/shellx64_v2.efi https://svn.code.sf.net/p/edk2/code/trunk/edk2/ShellBinPkg/UefiShell/X64/Shell.efi
+        # EFI Shell 1.0 for non UEFI 2.3+ ( http://sourceforge.net/apps/mediawiki/tianocore/index.php?title=Efi-shell )
+        curl -o ${work_dir}/iso/EFI/shellx64_v1.efi https://svn.code.sf.net/p/edk2/code/trunk/edk2/EdkShellBinPkg/FullShell/X64/Shell_Full.efi
+        : > ${work_dir}/build.${FUNCNAME}
+        echo -e "$_g >$_W done $_n"
+    fi
+}
+
+# Prepare kernel.img::/EFI 
+make_efiboot() {
+    if [[ ! -e ${work_dir}/build.${FUNCNAME} ]]; then
+        echo -e -n "$_r >$_W Prepare ${install_dir}/iso/EFI \n $_n"
+        mkdir -p ${work_dir}/iso/EFI/kiso
+        truncate -s 31M ${work_dir}/iso/EFI/kiso/kdeosiso.img
+        mkfs.vfat -n KAOS_EFI ${work_dir}/iso/EFI/kiso/kdeosiso.img
+
+        mkdir -p ${work_dir}/efiboot
+        mount ${work_dir}/iso/EFI/kiso/kdeosiso.img ${work_dir}/efiboot
+
+        mkdir -p ${work_dir}/efiboot/EFI/kiso
+        cp ${work_dir}/iso/${install_dir}/boot/x86_64/kdeosiso ${work_dir}/efiboot/EFI/kiso/kdeosiso.efi
+        cp ${work_dir}/iso/${install_dir}/boot/x86_64/kdeosiso.img ${work_dir}/efiboot/EFI/kiso/kdeosiso.img
+
+        mkdir -p ${work_dir}/efiboot/EFI/boot
+        cp ${work_dir}/root-image/usr/lib/prebootloader/PreLoader.efi ${work_dir}/efiboot/EFI/boot/bootx64.efi
+        cp ${work_dir}/root-image/usr/lib/prebootloader/HashTool.efi ${work_dir}/efiboot/EFI/boot/
+
+        cp ${work_dir}/root-image/usr/lib/gummiboot/gummibootx64.efi ${work_dir}/efiboot/EFI/boot/loader.efi
+
+        mkdir -p ${work_dir}/efiboot/loader/entries
+        cp boot-files/loader/loader.conf ${work_dir}/efiboot/loader/
+        cp boot-files/loader/splash.bmp ${work_dir}/efiboot/loader/
+        cp boot-files/loader/entries/uefi-shell-v2-x86_64.conf ${work_dir}/efiboot/loader/entries/
+        cp boot-files/loader/entries/uefi-shell-v1-x86_64.conf ${work_dir}/efiboot/loader/entries/
+
+        sed "s|%KDEOSISO_LABEL%|${iso_label}|g;
+             s|%INSTALL_DIR%|${install_dir}|g" \
+            boot-files/loader/entries/kaos-dvd.conf > ${work_dir}/efiboot/loader/entries/kaos.conf
+
+        sed "s|%KDEOSISO_LABEL%|${iso_label}|g;
+             s|%INSTALL_DIR%|${install_dir}|g" \
+            boot-files/loader/entries/kaos-nonfree-dvd.conf > ${work_dir}/efiboot/loader/entries/kaos-nonfree.conf
+
+        cp ${work_dir}/iso/EFI/shellx64_v2.efi ${work_dir}/efiboot/EFI/
+        cp ${work_dir}/iso/EFI/shellx64_v1.efi ${work_dir}/efiboot/EFI/
+
+        umount ${work_dir}/efiboot
+        : > ${work_dir}/build.${FUNCNAME}
+        echo -e "$_g >$_W done $_n"
+    fi
+}
+
 
 # Prepare overlay-image
 make_overlay() {
@@ -167,6 +255,8 @@ fi
 
 make_root_image
 make_boot
+make_efi
+make_efiboot
 make_overlay
 make_overlay_pkgs
 make_isomounts
