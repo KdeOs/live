@@ -1,5 +1,5 @@
 # KaOS-Live Packages file
-# Version: 20140815
+# Version: 20140927
 
 ### These should probably be present
 base  
@@ -20,6 +20,9 @@ nbd
 kdeos-hardware-detection
 #hwd
 syslinux
+prebootloader
+gummiboot
+refind-efi
 grub-common
 grub-bios
 grub-efi
@@ -34,6 +37,7 @@ ntfs-3g
 btrfs-progs
 dosfstools
 gptfdisk
+jfsutils
 testdisk
 
 # drivers & system utilities
@@ -167,9 +171,6 @@ hicolor-icon-theme
 phonon-backend-gstreamer
 #phonon-backend-vlc
 #phonon-backend-mplayer
-#gstreamer0.10-good-plugins  ## all gstreamer included in qtwebkit
-#gstreamer0.10-ugly-plugins # for mp3
-#gstreamer0.10-bad-plugins # for ac3
 libcanberra-gstreamer
 libao
 alsa-lib
@@ -178,7 +179,6 @@ alsa-utils
 # pulse support
 pulseaudio
 pulseaudio-alsa
-gstreamer0.10-pulse
 libcanberra-pulse
 
 # kde (minimal base)
@@ -226,7 +226,7 @@ kdeutils-kgpg
 kdeutils-sweeper
 kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
-kdenetwork-kget
+#kdenetwork-kget
 kdeplasma-addons-runners-characters
 kdeplasma-addons-runners-converter
 ###kdeplasma-addons-runners-datetime
@@ -246,7 +246,7 @@ partitionmanager
 #kde-l10n-nl
 #kde-l10n-pt_BR
 
-kde-l10n
+#kde-l10n
 
 # networkmanagement
 #kdeplasma-applets-networkmanagement conflicts with plasma-nm now
@@ -266,9 +266,10 @@ rsync
 hdparm
 iso-codes
 keyboardctl
-ttf-indic-otf
-dconf
-thus
+calamares
+#dconf
+librsvg
+#thus
 welcome
 
 # extragear
@@ -282,7 +283,7 @@ yakuake
 ##kdemultimedia-dragonplayer
 smplayer
 smtube
-amarok
+#amarok
 ##clementine
 kde-gtk-config
 ##oxygen-gtk-icons
@@ -293,11 +294,11 @@ tomoyo-tools
 ##spun
 ##clamav
 init-live
-#kdeplasma-addons-applets-lancelot
+###kdeplasma-addons-applets-lancelot
 homerun 
-#kdeplasma-applets-appmenu-qml
-kcp
-base-devel
+###kdeplasma-applets-appmenu-qml
+#kcp
+#base-devel
 octopi
 kio-mtp
 inxi
@@ -308,48 +309,47 @@ kcmsystemd
 xdg-user-dirs
 
 #xbmc
-#qt5
 #blender
 ##kdenlive
 ##spideroak
 #calibre
 ##grub2-editor
 ####hotot
-dropbox
+seafile
 
 # burn
-dvd+rw-tools
-vcdimager
-transcode
-emovix
-k3b
+#dvd+rw-tools
+#vcdimager
+#transcode
+#emovix
+#k3b
 
 # debugging
 gdb
 
 # printing
-cups
-gutenprint 
-system-config-printer 
-cups-pdf 
-kdeadmin-print-manager
-hplip
-epsoneplijs
-epson-inkjet-printer-escpr
-samba
-a2ps
+#cups
+#gutenprint 
+#system-config-printer 
+#cups-pdf 
+#kdeadmin-print-manager
+#hplip
+#epsoneplijs
+#epson-inkjet-printer-escpr
+#samba
+#a2ps
 
 # office
-calligra
-calligra-l10n
+#calligra
+#calligra-l10n
 
 # games
-kdegames-kpat
+#kdegames-kpat
 
 #IM
-telepathy-idle
-telepathy-haze
-telepathy-gabble
-telepathy-logger
-telepathy-salut
-kde-telepathy
+#telepathy-idle
+#telepathy-haze
+#telepathy-gabble
+#telepathy-logger
+#telepathy-salut
+#kde-telepathy
