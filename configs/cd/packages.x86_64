@@ -1,5 +1,5 @@
 # KaOS-Live Packages file
-# Version: 20141013
+# Version: 20141221
 
 ### These should probably be present
 base  
@@ -226,7 +226,7 @@ kdeutils-kgpg
 kdeutils-sweeper
 kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
-#kdenetwork-kget
+kdenetwork-kget
 kdeplasma-addons-runners-characters
 kdeplasma-addons-runners-converter
 ###kdeplasma-addons-runners-datetime
@@ -246,7 +246,7 @@ partitionmanager
 #kde-l10n-nl
 #kde-l10n-pt_BR
 
-#kde-l10n
+kde-l10n
 
 # networkmanagement
 #kdeplasma-applets-networkmanagement conflicts with plasma-nm now
@@ -284,7 +284,7 @@ yakuake
 smplayer
 smtube
 #amarok
-##clementine
+clementine
 kde-gtk-config
 ##oxygen-gtk-icons
 oxygen-gtk2
@@ -297,8 +297,8 @@ init-live
 ###kdeplasma-addons-applets-lancelot
 homerun 
 ###kdeplasma-applets-appmenu-qml
-#kcp
-#base-devel
+kcp
+base-devel
 octopi
 kio-mtp
 inxi
@@ -310,7 +310,7 @@ xdg-user-dirs
 
 #xbmc
 #blender
-##kdenlive
+kdenlive
 ##spideroak
 #calibre
 ##grub2-editor
@@ -318,38 +318,38 @@ xdg-user-dirs
 seafile-client
 
 # burn
-#dvd+rw-tools
-#vcdimager
-#transcode
-#emovix
-#k3b
+dvd+rw-tools
+vcdimager
+transcode
+emovix
+k3b
 
 # debugging
 gdb
 
 # printing
-#cups
-#gutenprint 
-#system-config-printer 
-#cups-pdf 
-#kdeadmin-print-manager
-#hplip
-#epsoneplijs
-#epson-inkjet-printer-escpr
-#samba
-#a2ps
+cups
+gutenprint 
+system-config-printer 
+cups-pdf 
+kdeadmin-print-manager
+hplip
+epsoneplijs
+epson-inkjet-printer-escpr
+samba
+a2ps
 
 # office
-#calligra
-#calligra-l10n
+calligra
+calligra-l10n
 
 # games
-#kdegames-kpat
+kdegames-kpat
 
 #IM
-#telepathy-idle
-#telepathy-haze
-#telepathy-gabble
-#telepathy-logger
-#telepathy-salut
-#kde-telepathy
+telepathy-idle
+telepathy-haze
+telepathy-gabble
+telepathy-logger
+telepathy-salut
+kde-telepathy
