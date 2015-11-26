@@ -4,9 +4,9 @@ PKGLIST=""
 QUIET="y"
 FORCE="n"
 PACCONFIG="/etc/pacman.conf"
-export LABEL="KDEOS_$(date +%Y%m)"
-PUBLISHER="KdeOS <http://www.kde-os.tk>"
-APPLICATION="KdeOS Live/Rescue CD"
+export LABEL="KAOS_$(date +%Y%m)"
+PUBLISHER="KaOS <http://kaosx.us>"
+APPLICATION="KaOS Live/Rescue CD"
 COMPRESSION="xz"
 CREATE_DEFAULT="n"
 INSTALL_DIR="kdeos"
@@ -196,6 +196,7 @@ _imgcommon () {
     for d in $(find "${work_dir}" -maxdepth 1 -type d -name '[^.]*'); do
         if [ "$d" != "${work_dir}/iso" -a \
              "$(basename "$d")" != "iso" -a \
+             "$(basename "$d")" != "efiboot" -a \
              "$d" != "${work_dir}" ]; then
             _mksquash "$d"
         fi
@@ -239,17 +240,23 @@ command_iso () {
     echo "Creating ISO image..."
     qflag=""
     [ "${QUIET}" = "y" ] && qflag="-quiet"
-    mkisofs ${qflag} -r -l \
-        -b isolinux/isolinux.bin -c isolinux/boot.cat \
-        -uid 0 -gid 0 \
-        -udf -iso-level 3 \
-        -input-charset utf-8 -p "prepared by mkkdeosiso" \
-        -no-emul-boot -boot-load-size 4 -boot-info-table \
-        -publisher "${PUBLISHER}" \
-        -A "${APPLICATION}" \
-        -V "${LABEL}" \
-        -o "${imgname}" "${work_dir}/iso/"
-    isohybrid "${imgname}"
+    xorriso -as mkisofs ${qflag} \
+            -iso-level 3 -rock -joliet \
+            -max-iso9660-filenames -omit-period \
+            -omit-version-number \
+            -relaxed-filenames -allow-lowercase \
+            -volid "${LABEL}" \
+            -appid "${APPLICATION}" \
+            -publisher "${PUBLISHER}" \
+            -preparer "prepared by mkkdeosiso" \
+            -eltorito-boot isolinux/isolinux.bin \
+            -eltorito-catalog isolinux/boot.cat \
+            -no-emul-boot -boot-load-size 4 -boot-info-table \
+            -isohybrid-mbr "${work_dir}/iso/isolinux/isohdpfx.bin" \
+            -eltorito-alt-boot -e EFI/kiso/kdeosiso.img \
+            -isohybrid-gpt-basdat -no-emul-boot \
+            -output "${imgname}" \
+            "${work_dir}/iso/"
 }
 
 # Go through the main commands in order. If 'all' was specified, then we want

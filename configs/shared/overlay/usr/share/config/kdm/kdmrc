@@ -378,7 +378,7 @@ AntiAliasing=true
 # Special case of HiddenUsers: users with a non-zero UID less than this number
 # will not be shown as well.
 # Default is 0
-MinShowUID=500
+MinShowUID=1000
 # Complement to MinShowUID: users with a UID greater than this number will
 # not be shown as well.
 # Default is 65535
@@ -461,7 +461,7 @@ UseTheme=true
 # The theme to use for the greeter. Can point to either a directory or an XML
 # file.
 # Default is ""
-Theme=/usr/share/apps/kdm/themes/grey
+Theme=/usr/share/apps/kdm/themes/midna
 
 # Core config for local displays
 [X-:*-Core]

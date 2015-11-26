@@ -1,5 +1,5 @@
-# KdeOS-Live Packages file
-# Version: 20130817
+# KaOS-Live Packages file
+# Version: 20141221
 
 ### These should probably be present
 base  
@@ -18,21 +18,26 @@ lsb-release
 # basic needs
 nbd
 kdeos-hardware-detection
-hwd
+#hwd
 syslinux
+prebootloader
+gummiboot
+refind-efi
 grub-common
 grub-bios
-grub-efi-x86_64
+grub-efi
 os-prober
 hwdetect
 dmidecode
 bc
-virtuoso
+##virtuoso
 xdelta3
 avahi
 ntfs-3g
+btrfs-progs
 dosfstools
 gptfdisk
+jfsutils
 testdisk
 
 # drivers & system utilities
@@ -52,7 +57,7 @@ libstdc++5
 # generally useful tools that dont require X
 bash-completion
 openssh
-##nmap
+nmap
 lsof
 vim
 sudo
@@ -125,7 +130,6 @@ xf86-video-intel
 #xf86-video-mga
 #xf86-video-neomagic
 xf86-video-nouveau
-#nouveau-dri ##part of mesa
 #xf86-video-nv
 #xf86-video-openchrome
 #xf86-video-radeonhd
@@ -142,7 +146,7 @@ xf86-video-nouveau
 #xf86-video-tseng
 #xf86-video-v4l
 xf86-video-vesa
-##xf86-video-vmware
+xf86-video-vmware
 #xf86-video-voodoo
 
 # xorg input drivers
@@ -157,7 +161,6 @@ xorg-fonts-cyrillic
 ttf-dejavu
 terminus-font
 ttf-liberation
-#wqy-zenhei
 wqy-microhei
 ttf-indic-otf
 
@@ -168,9 +171,6 @@ hicolor-icon-theme
 phonon-backend-gstreamer
 #phonon-backend-vlc
 #phonon-backend-mplayer
-#gstreamer0.10-good-plugins  ## all gstreamer included in qtwebkit
-#gstreamer0.10-ugly-plugins # for mp3
-#gstreamer0.10-bad-plugins # for ac3
 libcanberra-gstreamer
 libao
 alsa-lib
@@ -179,9 +179,7 @@ alsa-utils
 # pulse support
 pulseaudio
 pulseaudio-alsa
-gstreamer0.10-pulse
 libcanberra-pulse
-#kdeplasma-addons-applets-veromix
 
 # kde (minimal base)
 qt
@@ -196,131 +194,162 @@ kde-workspace
 oxygen-icons
 
 # themes 
-kde-kdm-themes-grey
-kde-ksplash-themes-grey
-kde-plasma-themes-Kotonaru
-wallpapers-grey
-kde-wallpapers
-grub-themes-monochrome
+kde-kdm-themes-midna
+kde-ksplash-themes-midna
+kde-plasma-themes-midna
+wallpapers-midna
+#kde-wallpapers
+KaOS_wallpapers
+grub-theme-midna
 python2-xlib
 ##python2-v4l2capture
 python2-imaging
-platinum-colors
+#platinum-colors
+midna-colors
+flattr-icons
 
 # kde (everything else)
 kdeadmin-kuser
 kdeadmin-kcron
 kdeadmin-ksystemlog
 kdemultimedia-kmix
+kdemultimedia-thumbnailers
 kdesdk-kate
+kdesdk-kompare
 kdegraphics-kgamma
 kdegraphics-gwenview
 kdegraphics-ksnapshot
 kdegraphics-okular
+kdegraphics-thumbnailers
 kdeutils-ark
 kdeutils-kgpg
 kdeutils-sweeper
-kdeplasma-applets-welcome-plasmoid
 kdeplasma-addons-applets-icontasks
 kdenetwork-kppp
-##kdenetwork-kget
-##kdeplasma-addons-runners-characters
-##kdeplasma-addons-runners-converter
-##kdeplasma-addons-runners-datetime
-##kdeplasma-addons-runners-dictionary ##4.10 option
-##kdeplasma-addons-runners-spellchecker
+kdenetwork-kget
+kdeplasma-addons-runners-characters
+kdeplasma-addons-runners-converter
+###kdeplasma-addons-runners-datetime
+kdeplasma-addons-runners-dictionary ##4.10 option
+kdeplasma-addons-runners-spellchecker
 appmenu-qt
+kde-touchpad-config
+kdeconnect-kde
+partitionmanager
 
 # locales
 #kde-l10n-ca
 #kde-l10n-de
-kde-l10n-es
+#kde-l10n-es
 #kde-l10n-fr
 #kde-l10n-it
-kde-l10n-nl
+#kde-l10n-nl
+#kde-l10n-pt_BR
 
-#kde-l10n
+kde-l10n
 
 # networkmanagement
-kdeplasma-applets-networkmanagement
+#kdeplasma-applets-networkmanagement conflicts with plasma-nm now
+plasma-nm
 modemmanager
 mobile-broadband-provider-info
 networkmanager-dispatcher-ntpd
 kcm-ufw
 
-# tribe + dependencies
-kdebindings-smokekde
-kdebindings-pykde4
+# installer + dependencies
+##kdebindings-smokekde
+##kdebindings-pykde4
 netctl   
-hwinfo
-tribe       
-#live-installer
+hwinfo      
+##installer
+rsync  
+hdparm
+iso-codes
+keyboardctl
+calamares
+#dconf
+librsvg
+#thus
+welcome
 
 # extragear
 quassel
-#rekonq
+##rekonq
 qupzilla
 bluedevil
 yakuake
-#qmmp
-#vlc
-kdemultimedia-dragonplayer
-amarok
+##qmmp
+##vlc
+##kdemultimedia-dragonplayer
+smplayer
+smtube
+#amarok
+clementine
 kde-gtk-config
 ##oxygen-gtk-icons
 oxygen-gtk2
 imagewriter
 tomoyo-tools
-python2-gobject3
-spun
+##python2-gobject3 no longer needed systemd 209
+##spun
 ##clamav
 init-live
-#kdeplasma-addons-applets-lancelot
-#kdeplasma-applets-homerun 
-kdeplasma-applets-appmenu-qml
+###kdeplasma-addons-applets-lancelot
+homerun 
+###kdeplasma-applets-appmenu-qml
+kcp
+base-devel
 octopi
 kio-mtp
+inxi
+kscreen
+##kmymoney
+##plasma-mediacenter
+kcmsystemd
+xdg-user-dirs
 
 #xbmc
-#qt5
 #blender
-##kdenlive
+kdenlive
 ##spideroak
 #calibre
 ##grub2-editor
+####hotot
+seafile-client
 
 # burn
-##dvd+rw-tools
-##vcdimager
-##transcode
-##emovix
-##k3b
+dvd+rw-tools
+vcdimager
+transcode
+emovix
+k3b
 
 # debugging
 gdb
 
 # printing
-##cups
-##gutenprint 
-##system-config-printer 
-##cups-pdf 
-##kdeadmin-print-manager
-##hplip
-##epsoneplijs
-##epson-inkjet-printer-escpr
-##samba
+cups
+gutenprint 
+system-config-printer 
+cups-pdf 
+kdeadmin-print-manager
+hplip
+epsoneplijs
+epson-inkjet-printer-escpr
+samba
+a2ps
 
 # office
 calligra
+calligra-l10n
 
 # games
-##kdegames-kpat
+kdegames-kpat
 
 #IM
-##telepathy-idle
-##telepathy-haze
-##telepathy-gabble
-##telepathy-logger
-##telepathy-rakia
-##telepathy-salut
-##kde-telepathy
+telepathy-idle
+telepathy-haze
+telepathy-gabble
+telepathy-logger
+telepathy-salut
+kde-telepathy

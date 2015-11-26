@@ -7,7 +7,6 @@ ShowNotifications=true
 ShowSystemServices=true
 
 [Containments][1]
-activity=
 desktop=-1
 formfactor=0
 immutability=1
@@ -43,7 +42,7 @@ zvalue=0
 slideTimer=10
 slidepaths=
 userswallpapers=
-wallpaper=/usr/share/wallpapers/grey/
+wallpaper=/usr/share/wallpapers/midna/
 wallpapercolor=0,0,0
 wallpaperposition=0
 
@@ -62,6 +61,9 @@ geometry=72,3,941,32
 immutability=1
 plugin=icontasks
 zvalue=0
+
+[Containments][3][Applets][54][Configuration]
+launcherIcons=true
 
 [Containments][3][Applets][54][LayoutInformation]
 Order=1
@@ -105,31 +107,36 @@ sourceAppletPluginName=systemtray
 [Containments][3][Applets][6][LayoutInformation]
 Order=2
 
-[Containments][3][Applets][61]
-geometry=0,3,32,32
-immutability=1
-plugin=appmenu-qml
-zvalue=4
-
-[Containments][3][Applets][61][Configuration][General]
-favorites=octopi.desktop,qupzilla.desktop,kde4-dragonplayer.desktop,kde4-systemsettings.desktop,kde4-dolphin.desktop,kde4-yakuake.desktop,kde4-kinfocenter.desktop,kde4-ksysguard.desktop,kde4-kate.desktop
-numOfColumns=3
-
-[Containments][3][Applets][61][LayoutInformation]
-Order=0
-
-[Containments][3][Applets][61][PopupApplet]
-DialogHeight=700
-DialogWidth=700
-
-[Containments][3][Applets][61][Shortcuts]
-global=Alt+F1
-
 [Containments][3][Applets][62]
-geometry=36,3,32,32
+geometry=156,3,32,32
 immutability=1
 plugin=org.kde.showActivityManager
 zvalue=0
+
+[Containments][3][Applets][66]
+geometry=36,3,116,32
+immutability=1
+plugin=pager
+zvalue=4
+
+[Containments][3][Applets][66][Configuration]
+hideWhenSingleDesktop=true
+
+[Containments][3][Applets][72]
+geometry=0,3,32,32
+immutability=1
+plugin=org.kde.homerun-kicker
+zvalue=6
+
+[Containments][3][Applets][72][Configuration][General]
+alignToBottom=false
+
+[Containments][3][Applets][72][PopupApplet]
+DialogHeight=422
+DialogWidth=252
+
+[Containments][3][Applets][72][Shortcuts]
+global=Alt+F1
 
 [Containments][3][Applets][8]
 immutability=1
